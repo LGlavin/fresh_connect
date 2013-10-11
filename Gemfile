@@ -34,6 +34,10 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+gem 'geocoder'
+gem 'area'
+
+gem 'devise'
 group :development, :test do
   gem 'pry-rails'
   gem 'rspec-rails'
