@@ -1,6 +1,7 @@
 require 'spec_helper'
 
 describe User do
+  it { should have_many :market }
   it { should have_valid(:username).when("abcde12345-_vbfabcde12345-_vbf") }
   it { should_not have_valid(:username).when(nil, '', "abcde12345-_vbfabcde12345-_vbft") }
   

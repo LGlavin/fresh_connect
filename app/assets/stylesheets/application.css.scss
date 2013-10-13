@@ -1,5 +1,5 @@
 
-@import "twitter/bootstrap";
+@import "bootstrap";
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
@@ -13,3 +13,37 @@
  *= require_self
  *= require_tree .
  */
+$body-bg: #ecf0f1;
+$navbar-default-bg:#ecf0f1;
+$navbar-default-link:#ecf0f1;
+$navbar-default:#ecf0f1;
+
+
+$navbar-brand: #c0392b;
+
+@import 'bootstrap';
+
+
+html, body {
+    background: url("Apple-orchard.jpg")no-repeat scroll 0 0 / 100% 100% transparent !important;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  
+}
+.column{
+  text-align:center;
+  margin: 10px;
+  padding:50px;
+  }
+
+h1{
+  color: #ecf0f1;
+} 
+
+h2{
+  color:#ecf0f1;
+}
+.nav-bar a{
+  color:#e74c3c;
+} 

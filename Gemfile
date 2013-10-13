@@ -21,7 +21,7 @@ gem 'coffee-rails', '~> 4.0.0'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 
-gem 'anjlab-bootstrap-rails', '>= 3.0.0.0', :require => 'bootstrap-rails'
+gem 'bootstrap-sass', github: 'thomas-mcdonald/bootstrap-sass', branch: '3'
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
@@ -36,6 +36,8 @@ end
 
 gem 'geocoder'
 gem 'area'
+gem 'gmaps4rails'
+
 
 gem 'devise'
 group :development, :test do
@@ -44,10 +46,11 @@ group :development, :test do
   gem 'shoulda-matchers'
   gem 'valid_attribute'
   gem "capybara"
-  gem 'factory_girl'
+  gem 'factory_girl_rails'
   gem 'launchy'
   gem 'better_errors'
   gem 'binding_of_caller'
+  gem 'database_cleaner'
 end
 
 # Use ActiveModel has_secure_password
