@@ -1,0 +1,43 @@
+
+
+
+<ul>
+<% for market in @market.nearbys(10) %>
+  <li><%= link_to market.address, market %> (<%= market.distance.round(2) %> miles)</li>
+<% end %>
+</ul<% title "market" %>
+
+<p>
+  <strong>Address:</strong>
+  <%= @market.address %>
+</p>
+<p>
+  <strong>Latitude:</strong>
+  <%= @market.latitude %>
+</p>
+<p>
+  <strong>Longitude:</strong>
+  <%= @market.longitude %>
+</p>
+
+<h3>Nearby Markets</h3>
+<ul>
+<% for market in @market.nearbys(10) %>
+  <li><%= link_to market.address, market %> (<%= market.distance.round(2) %> miles)</li>
+<% end %>
+</ul>
+
+<p>
+  <%= link_to "Edit", edit_market_path(@market) %> |
+  <%= link_to "Destroy", @market, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", markets_path %>
+</p>
+
+<%= image_tag "http://maps.google.com/maps/api/staticmap?size=450x300&sensor=false&zoom=16&markers=#{@market.latitude}%2C#{@market.longitude}" %>
+
+<h3>Nearby markets</h3>
+<ul>
+<% for market in @market.nearbys(10) %>
+  <li><%= link_to market.address, market%> (<%= market.distance.round(2) %> miles)</li>
+<% end %>
+</ul>
