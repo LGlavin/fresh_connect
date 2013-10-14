@@ -1,3 +1,60 @@
 @import url(http://fonts.googleapis.com/css?family=Delius+Swash+Caps);
+@import url(http://fonts.googleapis.com/css?family=Varela+Round);
+
+
 
 @import 'bootstrap';
+
+html, body{
+    background: url("Apple-orchard.jpg")no-repeat scroll 0 0 / 100% 100% transparent !important;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    
+    font-family:'Delius Swash Caps', cursive;
+    font-weight:bold;
+    font-size:20px;
+  
+}
+
+.column{
+  text-align:center;
+  margin: 10px;
+  padding:20px;
+  }
+
+h1, h2{
+  color: #ecf0f1;
+  font-family:'Delius Swash Caps', cursive;
+  font-weight:bold;
+  font-size:52px;
+}
+
+h2{
+  font-size:46px;
+ // color:#3498db;
+ font-family: 'Varela Round', sans-serif;
+}
+
+/*.nav-bar a{
+  color:#e74c3c;
+}*/ 
+
+.btn{
+ margin: 10px;
+ background-color: #e74c3c;
+ color:#ecf0f1;
+}
+
+
+.navbar-right{
+  padding:15px;
+  backgroud-color:#ecf0f1;
+  list-style:none;
+  text-decoration:none;
+}
+
+
