@@ -36,7 +36,7 @@ end
 
 gem 'geocoder'
 gem 'area'
-gem 'gmaps4rails'
+
 
 
 gem 'devise'
