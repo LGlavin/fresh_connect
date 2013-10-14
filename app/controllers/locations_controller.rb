@@ -1,20 +1,25 @@
 class LocationsController < ApplicationController
+  
   def index
-     @locations = if near_query.present?
-      Location.near(near_query)
+    if params[:search].present?
+     @locations = Locations.near(params[:search], 100, :order => :distance)
+      
     else
-      Location.all
+      @locations = Location.all
     end
-    def near_query
-      PostalCode.new(search_value).coordinates
-   end
+ end   
+   private
     def search_value
       params[:search] && params[:search][:value]
     end
+
   
   def new
-end
-end
-  def show
+    @location = Location.new
   end
-end
+
+  def show
+    @location = Location.find(params[:id])
+  end
+ end
+
