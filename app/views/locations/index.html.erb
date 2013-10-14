@@ -1,0 +1,13 @@
+<ul class="locations">
+  <% @locations.each do |location| %>
+   <!--  <li data-id="<%=location.id%>"> -->
+    <p><%= location.name %></p>
+    <p>
+      <%= location.address %>
+      <%= location.city %>
+      <%= location.state %>
+      <%= location.postal_code %>
+    </p>
+    </li>
+    <% end %>
+  </ul>   

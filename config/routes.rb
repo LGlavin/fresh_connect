@@ -1,4 +1,7 @@
 FreshConnect::Application.routes.draw do
+  root :to => 'welcome#index'
+  resources :locations
+
   resources :markets
 
   devise_for :users
@@ -6,7 +9,7 @@ FreshConnect::Application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-   root 'welcome#index'
+  
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

@@ -6,7 +6,7 @@ class CreateMarkets < ActiveRecord::Migration
       t.datetime :datetime
       t.string :address, null: false
       t.string :postal_code
-      t.string :country_code
+      t.string :state
       t.string :city
       t.float :latitude, null: false
       t.float :longitude, null: false
