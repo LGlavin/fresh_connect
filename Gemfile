@@ -36,7 +36,13 @@ end
 
 gem 'geocoder'
 gem 'area'
+gem 'gmaps4rails'
 
+
+group :production do
+  gem 'rails_12factor'
+  gem 'unicorn'
+end
 
 
 gem 'devise'
