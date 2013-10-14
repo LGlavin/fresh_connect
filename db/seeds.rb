@@ -31,6 +31,6 @@
         
         market.save!
       end
-
+  end
 end
 
