@@ -3,17 +3,19 @@
 <head>
   <title>FreshConnect</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+   <%= stylesheet_link_tag    "bootstrap_and_customization", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
 
+ <div "container">
  <%= render 'layouts/header' %>
  
 <p class= "notice"><%= notice %></p>
 <p class= "alert"><%= alert %></p>
 <%= yield %>
-
+</div>
 </body>
 </html>
