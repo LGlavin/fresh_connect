@@ -5,12 +5,6 @@
 
 @import 'bootstrap';
 
-html, body{
-    background: url("Apple-orchard.jpg")no-repeat scroll 0 0 / 100% 100% transparent !important;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-}
 
 html, body {
     
@@ -45,14 +39,14 @@ h2{
 
 .btn{
  margin: 10px;
- background-color: #e74c3c;
+
  color:#ecf0f1;
 }
 
 
 .navbar-right{
   padding:15px;
-  backgroud-color:#ecf0f1;
+  
   list-style:none;
   text-decoration:none;
 }

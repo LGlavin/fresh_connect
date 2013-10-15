@@ -7,6 +7,9 @@ class MarketsController < ApplicationController
     @market = Market.new
   end
 
+  def edit
+  end
+
   def show
     @market = Market.all
   end
