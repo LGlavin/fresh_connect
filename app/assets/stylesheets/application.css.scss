@@ -16,11 +16,11 @@
  *= require_tree .
  */
 $body-bg: #ecf0f1;
-$navbar-default-bg:#ecf0f1;
-//$navbar-default-link-color:#e74c3c; 
-//$navbar-default-link-hover-color: 
-//$navbar-default-brand-hover-bg: #e74c3c;
-//$navbar-default-brand-link-color: #e74c3c;
+$navbar-default-bg:#e74c3c;
+$navbar-default-link-color:#e74c3c; 
+$navbar-default-link-hover-color:#e74c3c; 
+$navbar-default-brand-hover-bg: #e74c3c;
+$navbar-default-brand-link-color: #e74c3c;
 
 
 @import 'bootstrap';
