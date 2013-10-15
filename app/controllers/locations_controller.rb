@@ -39,4 +39,9 @@ end
       params[:search] && params[:search][:value]
     end
 end
+
+  def location_params
+    params.require(:location).permit(:name, :address, :city, :postal_code)
+  end
+
  
