@@ -17,4 +17,4 @@ end
     "#{self.street}, #{self.city}, #{self.country}" 
   end
  end
-end
+

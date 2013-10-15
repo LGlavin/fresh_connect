@@ -2,11 +2,12 @@ class LocationsController < ApplicationController
   
   def index
     @locations = if search_value.present?
-                  Location.near(search_value)
-                else
-                  Location.all
-                end
-              end
+      Location.near(search_value)
+      else
+      Location.all
+  end
+end
+
             
 
 
@@ -30,6 +31,7 @@ class LocationsController < ApplicationController
   # def show
   #   @location = Location.find(params[:id])
   # end
+  end
 end
 
 

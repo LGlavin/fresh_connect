@@ -7,11 +7,15 @@
 
 
 html, body {
-    
+    background-color: #e74c3c;
     font-family:'Delius Swash Caps', cursive;
     font-weight:bold;
     font-size:20px;
   
+}
+
+.field, .submit{
+ margin: 10px;
 }
 
 .column{
@@ -50,5 +54,16 @@ h2{
   list-style:none;
   text-decoration:none;
 }
+h3, tbody, tr, td, table{
+  color: #ecf0f1;
+  font-family:'Delius Swash Caps', cursive;
+  font-weight:bold;
+  margin:35px;
+}
 
+h3{
+  padding: 25px;
+  font-size: 40px;
+  margin:25;
+}
 

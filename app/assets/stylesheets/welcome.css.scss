@@ -47,10 +47,20 @@ h2{
  color:#ecf0f1;
 }
 
+.navbar-left{
+ color: #e74c3c;
+}
 
 .navbar-right{
   padding:15px;
-  background-color:#ecf0f1;
-  list-style:none;
+  color:#ecf0f1;
+ 
+}
+
+a:hover{
   text-decoration:none;
+  color: #e74c3c;
+}
+a:hover > .btn-btn-default{
+  text-color: white;
 }
