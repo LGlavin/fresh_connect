@@ -2,7 +2,7 @@ class Location < ActiveRecord::Base
 
 geocoded_by :address
 
-after_validation :geocode_by_address, :if => :address_changed
+after_validation :geocode 
 
 # private
 
