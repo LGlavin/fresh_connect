@@ -30,10 +30,10 @@
 
      <%= link_to "Sign In", new_user_session_path %>
    <% end %>
-
+  
 
   </div>
-    
+    <%= yield :head %> (in your header)
   </div><!-- /.navbar-collapse -->
 </nav>
 </body>

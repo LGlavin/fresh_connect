@@ -5,6 +5,7 @@ def index
     @locations = Location.near(params[:search], 50, :order => :distance)
   else
     @locations = Location.all
+   @json = User.all.to_gmaps4rails
   end
 end
 
