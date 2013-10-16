@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(version: 20131016211230) do
     t.string   "address"
     t.float    "latitude"
     t.float    "longitude"
+    t.integer  "market_id"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.boolean  "gmaps"

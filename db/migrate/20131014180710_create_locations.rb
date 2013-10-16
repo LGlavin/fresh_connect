@@ -4,7 +4,7 @@ class CreateLocations < ActiveRecord::Migration
       t.string :address
       t.float :latitude
       t.float :longitude
-
+      t.integer :market_id
       t.timestamps
     end
   end
