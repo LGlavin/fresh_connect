@@ -37,7 +37,7 @@ end
 gem 'geocoder'
 gem 'area'
 gem 'gmaps4rails'
-
+gem 'faker'
 
 group :production do
   gem 'rails_12factor'

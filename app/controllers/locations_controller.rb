@@ -5,10 +5,9 @@ class LocationsController < ApplicationController
       @locations = Location.near(params[:search]) #, 50, :order => :distance)
     else
       @locations = Location.all
-       @json = @locations.to_gmaps4rails |location, marker|
+       @json = @locations.to_gmaps4rails 
     end
   end
-
   def show
     @location = Location.find(params[:id])
   end
@@ -18,7 +17,7 @@ class LocationsController < ApplicationController
   end
 
   def create
-    @location = Location.new(params[:location])
+    @location = Location.new(location_params)
     if @location.save
       redirect_to new_market_path, :notice => "Successfully created location."
     else
@@ -43,6 +42,10 @@ class LocationsController < ApplicationController
     @location = Location.find(params[:id])
     @location.destroy
     redirect_to locations_url, :notice => "Successfully destroyed location."
+  end
+
+  def location_params
+    params.require(:location).permit(:name, :address)
   end
 end
 
