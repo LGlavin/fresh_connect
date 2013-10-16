@@ -4,8 +4,8 @@ class LocationsController < ApplicationController
     if params[:search].present?
       @locations = Location.near(params[:search]) #, 50, :order => :distance)
     else
-      @locations = Location.all
-       @json = @locations.to_gmaps4rails 
+       @locations = Location.all
+       @json = @locations.all.to_gmaps4rails 
     end
   end
   def show
@@ -19,7 +19,7 @@ class LocationsController < ApplicationController
   def create
     @location = Location.new(location_params)
     if @location.save
-      redirect_to new_market_path, :notice => "Successfully created location."
+      redirect_to new_location_path, :notice => "Successfully created location."
     else
       render :action => 'new'
     end
@@ -31,7 +31,7 @@ class LocationsController < ApplicationController
 
   def update
     @location = Location.find(params[:id])
-    if @location.update_attributes(params[:location])
+    if @location.update_attributes(location_params)
       redirect_to @location, :notice  => "Successfully updated location."
     else
       render :action => 'edit'

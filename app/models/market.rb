@@ -14,6 +14,6 @@ after_validation :geocode, :if => :address_changed?
 
 def gmaps4rails_address
 #describe how to retrieve the address from your model, if you use directly a db column, you can dry your code, see wiki
-  "#{self.street}, #{self.city}, #{self.country}" 
+  "#{address}" 
 end
 end
