@@ -1,17 +1,15 @@
 class Location < ActiveRecord::Base
-
 geocoded_by :address
+after_validation :geocode, :if => :address_changed?
 
-after_validation :geocode 
-geocoded_by :address  #latitude  => :lat, :longitude => :lon 
 # private
 
 # def geocode_by_postal_code
 #   self.latitude, self.longitude = PostalCode.new(postal_code).coordinates
+# # end
+# def address
+#   [street, city, state].compact.join(', ')
 # end
-def address
-  [street, city, state].compact.join(', ')
-end
 
   acts_as_gmappable
 
@@ -20,4 +18,5 @@ end
     "#{self.street}, #{self.city}, #{self.country}" 
   end
  end
+
 

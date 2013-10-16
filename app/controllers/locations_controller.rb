@@ -1,50 +1,48 @@
 class LocationsController < ApplicationController
   
-def index
-  if params[:search].present?
-    @locations = Location.near(params[:search])#, 5, :order => :distance)
- 
-  else
-    @locations = Location.all
-   #@json = User.all.to_gmaps4rails
-  end
-end
-
-    def new
-    @location = Location.new
+ def index
+    if params[:search].present?
+      @locations = Location.near(params[:search]) #, 50, :order => :distance)
+    else
+      @locations = Location.all
+    end
   end
 
   def show
-    @location = Location.find_by(params[:id])
-    @markets = @location.markets
-    @new_market = Market.new
+    @location = Location.find(params[:id])
   end
-  
-  def create
-    @location = Location.new(location_params)
-    if location.save 
-     flash[:notice] = "location was successfully recorded!"
-      redirect_to new_location_path
-    else
-      render :new
-  end
-end
-  #   if params[:search].present?
-  #    @locations = Locations.near(params[:search], 100, :order => :distance)
-      
-  #   else
-  #     @locations = Location.all
-  #   end
-  # end 
-  
-   private
-    def search_value
-      params[:search] && params[:search][:value]
-    end
-end
 
-  def location_params
-    params.require(:location).permit(:name, :address, :city, :postal_code)
+  def new
+    @location = Location.new
   end
+
+  def create
+    @location = Location.new(params[:location])
+    if @location.save
+      redirect_to new_market_path, :notice => "Successfully created location."
+    else
+      render :action => 'new'
+    end
+  end
+
+  def edit
+    @location = Location.find(params[:id])
+  end
+
+  def update
+    @location = Location.find(params[:id])
+    if @location.update_attributes(params[:location])
+      redirect_to @location, :notice  => "Successfully updated location."
+    else
+      render :action => 'edit'
+    end
+  end
+
+  def destroy
+    @location = Location.find(params[:id])
+    @location.destroy
+    redirect_to locations_url, :notice => "Successfully destroyed location."
+  end
+end
 
  
