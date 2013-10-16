@@ -5,6 +5,7 @@ class LocationsController < ApplicationController
       @locations = Location.near(params[:search]) #, 50, :order => :distance)
     else
       @locations = Location.all
+       @json = @locations.to_gmaps4rails |location, marker|
     end
   end
 
