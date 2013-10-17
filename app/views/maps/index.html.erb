@@ -1,0 +1,14 @@
+<p>
+  <%= link_to(root_path, :class => "btn") do %>
+    <i class="icon-arrow-left"></i>
+    Back to the start page
+  <% end %>
+  <br /><br />
+</p>
+
+<h1>This is a map!</h1>
+<p>
+  <%= gmaps( :markers => {:data => @gmaps_json}, 
+             :map_options => {:auto_adjust => true }
+             ) %>  
+</p>

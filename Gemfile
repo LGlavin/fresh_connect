@@ -36,8 +36,9 @@ end
 
 gem 'geocoder'
 gem 'area'
-gem 'gmaps4rails'
+gem 'gmaps4rails', '>= 2.0.1', git: 'https://github.com/fiedl/Google-Maps-for-Rails.git'
 gem 'faker'
+
 
 group :production do
   gem 'rails_12factor'

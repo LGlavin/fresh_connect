@@ -6,6 +6,7 @@
   <%= stylesheet_link_tag    "markets", media: "all", "data-turbolinks-track" => true %>
    <%= stylesheet_link_tag    "bootstrap_and_customization", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    <%= gmaps4rails_api_script_tags %>
   <%= csrf_meta_tags %>
   <%= yield :scripts %>
 </head>

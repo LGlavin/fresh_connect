@@ -31,7 +31,7 @@ class LocationsController < ApplicationController
 
   def update
     @location = Location.find(params[:id])
-    if @location.update_attributes(location_params)
+    if @location.update_attributes(location_p)
       redirect_to @location, :notice  => "Successfully updated location."
     else
       render :action => 'edit'
