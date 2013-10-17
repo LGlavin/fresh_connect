@@ -16,4 +16,5 @@
 /tmp
 /.config.swp
 .DS\_Store
-*.swp
+
+.git/.config.swp
