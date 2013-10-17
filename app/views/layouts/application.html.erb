@@ -5,10 +5,7 @@
   <%= stylesheet_link_tag    "application", media: "all" %>
   <%= stylesheet_link_tag    "markets", media: "all" %>
    <%= stylesheet_link_tag    "bootstrap_and_customization", media: "all" %> 
-   
-   <%= gmaps4rails_api_script_tags %>
-  
-  <%= javascript_include_tag "application" %>
+   <%= javascript_include_tag "application" %>
  
   <%= csrf_meta_tags %>
   <%= yield :scripts %>
@@ -24,10 +21,11 @@
 <%= yield %>
 <%= yield :scripts %>
 </div>
-</body>
+
 
 
    <%= gmaps4rails_api_script_tags %>
-   <%= stylesheet_link_tag 'gmaps4rails', media: "all" %>
-   <%= gmaps4rails(@json) %>
+   <%= stylesheet_link_tag 'gmaps4rails' %>
+ 
+   </body>
 </html>

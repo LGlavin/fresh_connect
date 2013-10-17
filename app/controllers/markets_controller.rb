@@ -1,7 +1,8 @@
 class MarketsController < ApplicationController
   def index
     @markets = Market.all
-  
+    @json = @markets.all.to_gmaps4rails 
+
   end
 
   def new
