@@ -12,22 +12,22 @@ CSV.foreach("db/markets.csv", headers:true) do |row|
 market = Market.where({
   state: row[0],
   name: row [1],
-  address: row[3],
-  city: row[4],
-  postal_code: [5],
-  longitude: [6],
-  latitidue: [7]
+  address: row[2],
+  city: row[3],
+  postal_code: [4],
+  longitude: [5],
+  latitidue: [6]
   }).first 
 
 if market.nil?
   market = Market.new({
   state: row[0],
   name: row [1],
-  address: row[3],
-  city: row[4],
-  postal_code: [5],
-  longitude: [6],
-  latitidue: [7]
+  address: row[2],
+  city: row[3],
+  postal_code: [4],
+  longitude: [5],
+  latitidue: [6]
     })
   market.save!
   end

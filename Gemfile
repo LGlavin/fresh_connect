@@ -39,6 +39,7 @@ gem 'area'
 gem 'gmaps4rails', '>= 2.0.1', git: 'https://github.com/fiedl/Google-Maps-for-Rails.git'
 gem 'faker'
 gem 'leaflet-rails'
+gem 'ransack'
 
 group :production do
   gem 'rails_12factor'
