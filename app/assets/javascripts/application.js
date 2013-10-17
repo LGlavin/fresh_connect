@@ -14,4 +14,7 @@
 //= require jquery_ujs
 //= require bootstrap
 //= require turbolinks
+//= require leaflet
+//= require gmaps4rails/base
+//= require gmaps4rails/google
 //= require_tree .
