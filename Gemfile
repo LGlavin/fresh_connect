@@ -41,10 +41,7 @@ gem 'faker'
 gem 'leaflet-rails'
 gem 'ransack'
 
-group :production do
-  gem 'rails_12factor'
-  gem 'unicorn'
-end
+gem 'rails_12factor', group: :production
 
 
 gem 'devise'
