@@ -15,27 +15,26 @@ scenario 'user enters valid information' do
   visit new_user_registration_path
   fill_in 'Username', with: 'Lizrtyi5'
   fill_in 'Email', with: 'example@example.com'
-  fill_in 'user_password', with: '12345678'
-  fill_in 'user_password_confirmation', with: '12345678'
-  click_link 'Sign up'
+  fill_in 'password', with: '12345678'
+  fill_in 'password_confirmation', with: '12345678'
+  click_link 'sign up'
 
   #expect(page).to have_content 'Welcome! You have signed up successfully.'
   end
 
  scenario 'user does not enter vaild information' do
   visit new_user_registration_path
-  click_link 'Sign up'
+  click_link 'sign up'
   #expect(page).to have_content("can't be blank")
 
  end
 
-# scenario 'with a conflicting password' do
- #  visit new_user_registration_path
- #  click_button 'Sign up'
- #  fill_in 'user_password', with: 'password'
- #  #fill_in 'Password Confirmation', with: 'Something different'
- #  click_link 'Sign up'
- #  expect(page).to have_content("doesn't match")
- # end
+scenario 'with a conflicting password' do
+  visit new_user_registration_path
+  fill_in 'password', with: 'password'
+  #fill_in 'Password Confirmation', with: 'Something different'
+  click_link 'sign up'
+  expect(page).to have_content("doesn't match")
+ end
 end
 

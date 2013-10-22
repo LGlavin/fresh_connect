@@ -1,8 +1,6 @@
 require 'spec_helper'
 
 describe Market do
-
-  it { should belong_to :user }
   
   it { should have_valid(:description).when('best haverst') }
 
