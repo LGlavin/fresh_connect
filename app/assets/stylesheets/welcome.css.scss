@@ -1,7 +1,7 @@
-
-html, body{
+.welcome-image{
     background: image-url("Apple-orchard.jpg")no-repeat scroll 0 0 / 100% 100% transparent !important;
     height: 100%;
+    width:100%;
     margin: 0;
     padding: 0;
 }
@@ -16,8 +16,8 @@ html, body {
 
 .column{
   text-align:center;
-  margin: 10px;
-  padding:20px;
+  //margin: 10px;
+  //padding:20px;
   }
 
 h1, h2{

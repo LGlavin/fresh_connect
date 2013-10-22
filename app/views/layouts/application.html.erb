@@ -10,18 +10,14 @@
 </head>
 <body>
 
+<%= render 'layouts/header' %>
+<%= gmaps4rails_api_script_tags %>
+<%= stylesheet_link_tag 'gmaps4rails' %>
+<div id = "contanier">
 
- <div "container">
- <%= render 'layouts/header' %>
-  <%= gmaps4rails_api_script_tags %>
-   <%= stylesheet_link_tag 'gmaps4rails' %>
-<p class= "notice"><%= notice %></p>
-<p class= "alert"><%= alert %></p>
 <%= yield %>
+
 <%= yield :scripts %>
-</div>
-
-
 
  
    </body>
