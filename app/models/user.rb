@@ -12,7 +12,7 @@ class User < ActiveRecord::Base
   inverse_of: :user,
   dependent: :destroy
 
-  geocoded_by :ip_address,
-  :latitude => :lat, :longitude => :lon
-after_validation :geocode
+#   geocoded_by :ip_address,
+#   :latitude => :lat, :longitude => :lon
+# after_validation :geocode
   end
