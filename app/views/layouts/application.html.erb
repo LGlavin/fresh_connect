@@ -2,14 +2,17 @@
 <html>
 <head>
   <title>FreshConnect</title>
+
   <%= stylesheet_link_tag    "application", media: "all" %>
-   <%= javascript_include_tag "application" %>
- 
+  <%= javascript_include_tag "application" %>
+  <%= javascript_include_tag "http://maps.googleapis.com/maps/api/js?libraries=places&sensor=false&language=en" %>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+
   <%= csrf_meta_tags %>
   <%= yield :scripts %>
 </head>
 <body>
-
+<body ng-app>
 <%= render 'layouts/header' %>
 <%= gmaps4rails_api_script_tags %>
 <%= stylesheet_link_tag 'gmaps4rails' %>

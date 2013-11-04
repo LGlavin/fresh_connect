@@ -1,11 +1,20 @@
-<h3> <%= @market.name %> </h3>
-  <div class= "row">
-    <div class ="span">
-   
+<p id="notice"><%= notice %></p>
 
-  <p>
-  
+<p>
+  <b>Name:</b>
+  <%= @market.name %>
+</p>
 
-    </div>
+<p>
+  <b>Current lat:</b>
+  <%= @market.current_lat %>
+</p>
+
+<p>
+  <b>Current lng:</b>
+  <%= @market.current_lng %>
+</p>
 
 
+<%= link_to 'Edit', edit_market_path(@market) %> |
+<%= link_to 'Back', markets_path %>

@@ -20,10 +20,13 @@ gem 'coffee-rails', '~> 4.0.0'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
-
+gem 'angularjs-rails'
 gem 'bootstrap-sass', github: 'thomas-mcdonald/bootstrap-sass', branch: '3'
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
+
+  gem 'angular-ui-bootstrap-rails'
+  gem 'angularjs-rails-resource', '~> 0.2.0'
 
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
@@ -33,12 +36,11 @@ group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
 end
-
+gem 'thin'
 gem 'geocoder'
 gem 'area'
 gem 'gmaps4rails', '>= 2.0.1', git: 'https://github.com/fiedl/Google-Maps-for-Rails.git'
 gem 'faker'
-gem 'leaflet-rails'
 gem 'ransack'
 
 gem 'rails_12factor', group: :production
