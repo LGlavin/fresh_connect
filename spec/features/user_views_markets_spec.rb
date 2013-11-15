@@ -11,11 +11,9 @@ feature "user views farmers markets", %Q{
 
   scenario 'user views all the farmers markets' do
     user = FactoryGirl.create(:user)
+    FactoryGirl.create(:market, user_id: user.id, name: 'Dewey Square')
     visit markets_path
-    Market.create(name: 'Boston')
-    prev_count = Market.count
-    #expect(Market.count).to eql(prev_count + 1)
-    #expect(page).to have_content('Hingham')
+    expect(page).to have_content('Dewey Square')
    
     
   end

@@ -13,12 +13,4 @@
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap
-//= require angular
-//= require angular-ui-bootstrap-tpls
-//= require angular-resource
-//= require angular-google-maps
-//= require angular-flash
-//= require angularjs/rails/resource
-//= require ./angular/autocomplete/app.js
-//= require_tree ./angular/autocomplete
 //= require_tree .

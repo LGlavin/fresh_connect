@@ -20,6 +20,7 @@ scenario 'user enters valid information' do
   fill_in 'Password confirmation', with: '12345678'
   click_button 'Sign up'
 
+
   #expect(page).to have_content 'Welcome! You have signed up successfully.'
   end
 

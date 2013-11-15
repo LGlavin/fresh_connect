@@ -1,21 +1,24 @@
-.welcome-image{
-    background: image-url("Apple-orchard.jpg")no-repeat scroll 0 0 / 100% 100% transparent !important;
-    height: 100%;
-    width:100%;
-    margin: 0;
-    padding: 0;
+#welcome-image{
+    background: image-url("Apple-orchard.jpg")no-repeat; //scroll 0 0 / 100% 100% transparent !important;
+    background-size: 100% 100%;
+    min-height: 600px;
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #999;
 }
 
-html, body {
+body {
     
     font-family:'Delius Swash Caps', cursive;
     font-weight:bold;
     font-size:20px;
   
 }
-
+.navbar{
+  margin-bottom:0px;
+}
 .column{
   text-align:center;
+
   //margin: 10px;
   //padding:20px;
   }

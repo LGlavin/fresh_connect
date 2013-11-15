@@ -12,8 +12,9 @@
   <%= yield :scripts %>
 </head>
 <body>
-<body ng-app>
+
 <%= render 'layouts/header' %>
+
 <%= gmaps4rails_api_script_tags %>
 <%= stylesheet_link_tag 'gmaps4rails' %>
 <div id = "contanier">
