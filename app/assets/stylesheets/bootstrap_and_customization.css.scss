@@ -75,3 +75,10 @@ a:hover {
   text-decorations:none;
 }
 
+a:hover{
+  text-decoration:none;
+  color: #e74c3c;
+}
+a:hover > .btn-btn-default{
+  text-color: white;
+}
