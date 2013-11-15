@@ -20,13 +20,11 @@ gem 'coffee-rails', '~> 4.0.0'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
-gem 'angularjs-rails'
 gem 'bootstrap-sass', github: 'thomas-mcdonald/bootstrap-sass', branch: '3'
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 
-  gem 'angular-ui-bootstrap-rails'
-  gem 'angularjs-rails-resource', '~> 0.2.0'
+
 
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
