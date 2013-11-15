@@ -1,5 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Delius+Swash+Caps);
 @import url(http://fonts.googleapis.com/css?family=Varela+Round);
+@import url(http://fonts.googleapis.com/css?family=Sintony);
 
 
 /*
@@ -19,14 +20,12 @@
 //$body-bg: #ecf0f1;
 $navbar-default-bg:#ecf0f1;
 $navbar-default-link-color:#e74c3c; 
-$navbar-default-link-hover-color:#ecf0f1;
-$navbar-default-brand-hover-bg: #e74c3c;
-$navbar-default-brand-link-color: #e74c3c;
+$navbar-default-link-hover-color:white;
+//$navbar-default-brand-hover-bg: #e74c3c;
+//$navbar-default-brand-link-color: #e74c3c;
 
 
 @import 'bootstrap';
-//@import 'welcome';
 @import 'bootstrap_and_customization';
-//@import 'locations';
-//@import 'markets';
+
 

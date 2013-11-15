@@ -1,15 +1,12 @@
 
-
-
 body {
    
     font-family:'Delius Swash Caps', cursive;
     font-weight:bold;
     font-size:20px;
-  
 }
 
-#welcome-image{
+#welcome{
     background-image: image-url('Apple-orchard.jpg'); //scroll 0 0 / 100% 100% transparent !important;
     background-size: 100% 100%;
     min-height: 600px;
@@ -39,32 +36,24 @@ h1, h2{
 
 h2{
   font-size:46px;
- // color:#3498db;
+  //color:#3498db;
  font-family: 'Varela Round', sans-serif;
 }
 
-/*.nav-bar a{
-  color:#e74c3c;
-}*/ 
-
-.btn{
- margin: 10px;
- //background-color: #e74c3c;
- //color:#e74c3c;
-}
-
-
 .navbar-right{
   padding:15px;
-  backgroud-color:#ecf0f1;
+  //backgroud-color:#ecf0f1;
   list-style:none;
   text-decoration:none;
 }
+
+
 h3, tbody, tr, td, table{
- // color: #ecf0f1;
-  font-family:'Delius Swash Caps', cursive;
+ //color: #ecf0f1;
+ font-family: 'Sintony', sans-serif;
   font-weight:bold;
   margin:35px;
+  padding: 15px;
 }
 
 h3{
