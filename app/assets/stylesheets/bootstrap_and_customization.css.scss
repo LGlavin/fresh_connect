@@ -1,13 +1,23 @@
-@import url(http://fonts.googleapis.com/css?family=Delius+Swash+Caps);
-@import url(http://fonts.googleapis.com/css?family=Varela+Round);
 
 
-html, body {
+
+body {
    
     font-family:'Delius Swash Caps', cursive;
     font-weight:bold;
     font-size:20px;
   
+}
+
+#welcome-image{
+    background-image: image-url("Apple-orchard.jpg")no-repeat; //scroll 0 0 / 100% 100% transparent !important;
+    background-size: 100% 100%;
+    min-height: 600px;
+    border-top: 1px solid #999;
+    border-bottom: 1fpx solid #999;
+}
+.navbar{
+  margin-bottom:0;
 }
 
 .field, .submit{
