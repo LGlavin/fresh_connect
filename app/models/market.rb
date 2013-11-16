@@ -7,7 +7,12 @@ class Market < ActiveRecord::Base
   def self.search(search)
     where("address like ?", "%#{search}%")
   end
+
+def address
+  [city, state].compact.join(', ')
 end
+
+
 
   geocoded_by :address
 after_validation :geocode, :if => :address_changed?

@@ -1,11 +1,12 @@
 class MarketsController < ApplicationController
   def index
-
-    @markets = Market.search(params[:search])
-    @markets = Market.all
-    @json = @markets.all.to_gmaps4rails 
+      if params[:search].present?
+      @markets = Market.search(params[:search]) #, 50, :order => :distance)
+    else
+       @markets = Market.all
+       @json = @markets.all.to_gmaps4rails 
    end
-  end
+ end
 
   def new
     @market = Market.new
@@ -45,7 +46,6 @@ end
   params.require(:market).permit(:name, :description, :address, :datetime)
   end
 end
-
 
 
 # geocoded_by :address
