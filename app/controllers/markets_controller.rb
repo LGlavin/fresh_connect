@@ -1,7 +1,7 @@
 class MarketsController < ApplicationController
   def index
       if params[:search].present?
-      @markets = Market.search(params[:search]) #, 50, :order => :distance)
+      @markets = Market.near(params[:search])
     else
        @markets = Market.all
        @json = @markets.all.to_gmaps4rails 
