@@ -1,10 +1,10 @@
 class MarketsController < ApplicationController
   def index
-    if params[:search]
+
     @markets = Market.search(params[:search])
     @markets = Market.all
     @json = @markets.all.to_gmaps4rails 
-   
+   end
   end
 
   def new
