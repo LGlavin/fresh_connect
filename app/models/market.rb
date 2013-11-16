@@ -4,11 +4,8 @@ class Market < ActiveRecord::Base
   validates_presence_of :address
   validates_presence_of :datetime
 
-def self.search(search)
-  if search
-    find(:all, :conditions => ['name LIKE ?', "%#{search}%"])
-  else
-    find(:all)
+  def self.search(search)
+    where("address like ?", "%#{search}%")
   end
 end
 
