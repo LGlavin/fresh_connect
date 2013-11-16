@@ -1,8 +1,9 @@
 class Market < ActiveRecord::Base
   belongs_to :user
   validates_presence_of :name
-  validates_presence_of :address
-  validates_presence_of :datetime
+  #validates_presence_of :address
+  #validates_presence_of :datetime
+  
 
   def self.search(search)
     where("address like ?", "%#{search}%")
