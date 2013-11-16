@@ -41,6 +41,8 @@ end
      redirect_to market_path, notice:'Market was successfully deleted'
  end 
  
+ def map
+ end
 
   def market_params
   params.require(:market).permit(:name, :description, :address, :datetime)
