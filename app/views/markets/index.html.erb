@@ -1,13 +1,12 @@
 <div id="market-front">
   <style>
 
-    #map { width:100%; height:600px; }
+    #map { width:100%; height:1000px; }
   </style>
 
 
-<div class="container">
-<div id='map'></div>
-</div>
+
+<div id='map'>
 
 
 
@@ -15,11 +14,12 @@
   <link href='http://api.tiles.mapbox.com/mapbox.js/v1.3.1/mapbox.css' rel='stylesheet' />
 
 
-
+</div>
+</div>
 <script type='text/javascript'>
 
 var map = L.mapbox.map('map', 'examples.map-9ijuk24y')
-    .setView([45, -102], 5);
+     .setView([37.9, -77], 6);
     <% @markets = Market.all %>
 <% @markets.each do |market| %>
         <% if  market.longitude.present? %>
@@ -31,17 +31,15 @@ L.mapbox.markerLayer({
         coordinates: [<%= market.longitude %>, <%= market.latitude %>]
     },
        properties: {
-        Name: '<%= market.name%>', 
-        longitude: '<%= market.longitude%>',
-        latitude: '<%= market.latitude%>',
-        city: '<%= market.city%>',
-        postal_code: '<%= market.postal_code %>',
+        title: 'Farmers Market',
+        description: '<%= market.name %>',
         'marker-size': 'small',
-        'marker-color': '#f65'
+        'marker-color': '#f44'
     }
 }).addTo(map);
     <% end %>
 <% end %>
+
 </script>
 
 

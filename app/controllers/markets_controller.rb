@@ -4,20 +4,24 @@ class MarketsController < ApplicationController
       @markets = Market.near(params[:search])
     else
        @markets = Market.all
-       @json = @markets.all.to_gmaps4rails 
+      
+       #@json = @markets.all.to_gmaps4rails 
    end
  end
+ 
 
   def new
     @market = Market.new
   end
 
   def edit
+     @market = Market.find(params[:id])
   end
 
   def show
-    @market = Market.all
-  end
+     @market = Market.find(params[:id])
+end
+  
 
    def create
     @market = Market.new(market_params)
@@ -44,8 +48,9 @@ end
  def map
  end
 
+
   def market_params
-  params.require(:market).permit(:name, :description, :address, :datetime)
+  params.require(:market).permit(:name, :description, :address, :datetime, :postal_code)
   end
 end
 

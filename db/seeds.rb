@@ -10,6 +10,7 @@ require 'csv'
 CSV.foreach("db/markets.csv", headers:true) do |row|
 
 market = Market.where({
+  state: row [0],
   name: row [1],
   address: row[2],
   city: row[3],
@@ -19,6 +20,7 @@ market = Market.where({
 
 if market.nil?
   market = Market.new({
+  state: row [0],
   name: row [1],
   address: row[2],
   city: row[3],
