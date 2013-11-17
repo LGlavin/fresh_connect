@@ -31,8 +31,8 @@ L.mapbox.markerLayer({
         coordinates: [<%= market.longitude %>, <%= market.latitude %>]
     },
        properties: {
-        title: 'Farmers Market',
-        description: '<%= market.name %>',
+        title: '<%= market.name %>',
+        description: '<%= market.address %>',
         'marker-size': 'small',
         'marker-color': '#f44'
     }
@@ -44,15 +44,16 @@ L.mapbox.markerLayer({
 
 
 
-<h3>Listing Markets</h3>
+<h3>Farmer's Markets</h3>
 
 <table>
   <thead>
     <tr>
       <th>Name</th>
       <th>Address</th>
-      <th> Time </th>
-      <th>Description</th>
+      <!-- th> Time </th>
+      <th> Days </th> -->
+     
     
       
     </tr>
@@ -66,10 +67,10 @@ L.mapbox.markerLayer({
         <td><%= market.datetime %></td>
         <td><%= market.description %></td>
        
-
+<!-- 
         <td><%= link_to 'Show', market %></td>
         <td><%= link_to 'Edit', market %></td>
-        <td><%= link_to 'Delete', market, method: :delete, data: { confirm: 'Are you sure you want to delete this market?' } %></td>
+        <td><%= link_to 'Delete', market, method: :delete, data: { confirm: 'Are you sure you want to delete this market?' } %></td> -->
       </tr>
     <% end %>
   </tbody>
