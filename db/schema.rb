@@ -34,8 +34,8 @@ ActiveRecord::Schema.define(version: 20131109140637) do
     t.string   "postal_code"
     t.string   "state"
     t.string   "city"
-    t.float    "latitude",    null: false
-    t.float    "longitude",   null: false
+    t.float    "latitude"
+    t.float    "longitude"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.boolean  "gmaps"

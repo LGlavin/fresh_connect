@@ -8,8 +8,8 @@ class CreateMarkets < ActiveRecord::Migration
       t.string :postal_code
       t.string :state
       t.string :city
-      t.float :latitude, null: false
-      t.float :longitude, null: false
+      t.float :latitude
+      t.float :longitude
 
       t.timestamps
     end

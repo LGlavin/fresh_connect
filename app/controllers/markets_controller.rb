@@ -5,7 +5,7 @@ class MarketsController < ApplicationController
     else
        @markets = Market.all
       
-       #@json = @markets.all.to_gmaps4rails 
+       @json = @markets.all #.to_gmaps4rails 
    end
  end
  
@@ -50,7 +50,7 @@ end
 
 
   def market_params
-  params.require(:market).permit(:name, :description, :address, :datetime, :postal_code)
+  params.require(:market).permit(:name,:address)
   end
 end
 
