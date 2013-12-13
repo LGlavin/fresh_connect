@@ -5,7 +5,7 @@ class MarketsController < ApplicationController
     else
        @markets = Market.all
       
-       @json = @markets.all #.to_gmaps4rails 
+       @json = @markets.all 
    end
  end
  
