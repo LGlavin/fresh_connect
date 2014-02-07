@@ -6,10 +6,6 @@ feature 'user reviews a market', %Q{
   So that I an give my opinion about the market
 } do
 
-  # ACCEPTANCE CRITIERA
-  #
-  # I must provide a text of the review
-  # I can see that I have reviewed the posting when I do so
 
 
   scenario 'user provides text for Review field' do

@@ -1,4 +1,3 @@
-
 <%= form_for @market do |f| %>
 
 <% if @market.errors.any? %>
@@ -14,18 +13,32 @@
 <% end %>
 
 <div class="field">
- 
   <%= f.text_field :name %>
 </div>
 
 <div class="field">
-
+  
   <%= f.text_field :address %>
+</div>
+ <div class="field">
+  <%= f.time_select :city %>
+</div>
+
+ <div class="field">
+  <%= f.time_select :state %>
 </div>
 
 <div class="field">
-  <%= f.text_area :description %>
+  <%= f.time_select :postal_code %>
 </div>
+<div class="field">
+  <%= f.date_select :datetime, :ignore_time => true %>
+</div>
+ 
+ <div class="field">
+  <%= f.time_select :datetime, :ignore_time => true %>
+</div>
+
 
 <div class="actions">
   <%= f.submit 'Create Market'%>

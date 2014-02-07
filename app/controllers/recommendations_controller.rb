@@ -1,7 +1,7 @@
 class RecommendationsController < ApplicationController
   def create
     if current_user
-      posting = Market.find(params[:market_id])
+      market = Market.find(params[:market_id])
       recommendation = Recommendation.new
       recommendation.user_id = current_user.id
       recommendation.market_id = market.id

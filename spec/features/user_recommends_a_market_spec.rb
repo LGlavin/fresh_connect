@@ -2,15 +2,13 @@ require 'spec_helper'
 
 feature 'user recommends a posting', %Q{
   As an authenticated user
-  I want to recommend on a posting
-  So that I can let others know about must-read postings
+  I want to recommend on a farmers market
+  So that I can let others see what is recommended
   } do
 
-  # Acceptance Criteria
-  # I can only recommend a posting once
-  # I can see that I added a recommendation
 
-  scenario 'user recommends a posting' do
+
+  scenario "user recommends a farmer's market" do
     user = FactoryGirl.create(:user)
     market = FactoryGirl.create(:market, user_id: user.id )
 
@@ -26,9 +24,9 @@ feature 'user recommends a posting', %Q{
     click_button 'Recommend'
 
     expect(Recommendation.count).to eql(prev_count + 1)
-    expect(page).to have_content("You recommended #{posting.title}")
+    expect(page).to have_content("You recommended #{market.name}")
     expect(Recommendation.last.user_id).to eql(user.id)
-    expect(Recommendation.last.posting_id).to eql(posting.id)
+    expect(Recommendation.last.market_id).to eql(market.id)
   end
 
 end

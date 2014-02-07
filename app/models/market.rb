@@ -1,5 +1,5 @@
 class Market < ActiveRecord::Base 
-  validates :name, presence: true, uniqueness: true
+  
   validates_presence_of :address
   
   has_many :reviews,
@@ -22,7 +22,6 @@ class Market < ActiveRecord::Base
 def address
   [city, state].compact.join(', ')
 end
-
 
 
   geocoded_by :address

@@ -2,62 +2,77 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-#logo img {
-   width: 45px;
-   margin-bottom:10px;
-   
-}
-body{
-  font-color: #2ecc71;
-}
-
-#favorites-link, #basket-link {
-  position: relative;
-}
-
-.checkout-button {
-  float: right;
+.column{
+ padding-top: 35px;
+ padding-left:750px;
 }
 
 
-.imgLiquid {
-  width: 200px;
-  height:240px; 
+h2, h3, h4, h5, h6 {
+  color: #F24825;
+  font-family:'Roboto Condensed', sans-serif;
+  font-size: 30px;
+
+}
+a{
+   color: #F24825;
+
+}
+a:hover{
+ color: #7f5000;
+}
+h2{
+  padding-left: 105px;
+}
+.btn-default{
+color:#F24825;
+}
+.btn-default:hover{
+color:#7f5000;
+}
+
+.input-append{
+  width:200px;
+
+}
+.button > .success{
+  color:#7f5000;
+}
+
+.form-group{
+  padding-left:105px;
+  width: 70%;
 }
 
 #logo a {
-  color: #2ecc71;
-  text-shadow: 1px 1px 15px rgba(0,0,0,0.3);
-  font-family: 'Nunito';
-  font-size: 150%;
+  color: #7f5000;
+  text-shadow: 0px 1px 2px rgba(255, 255, 255, 0.5);
+  font-family:'Roboto Condensed', sans-serif;
+  font-size: 25px;
+
+  
 }
 
-#background-img {
-  background: image-url('farmer.png');
-}
+// #background-img {
+//   background: image-url('canvas.jpg');
+// }
 
-#favorites-link, #basket-link {
-  position: relative;
-}
 
-.checkout-button {
-  float: right;
-}
-
-// #main-img{
-//   background: image-url('fog_hay.JPG');
-//   background-size: 100% 100%;
-//   height: 1000px;
-//   width:100%;
-//   border-top: 1px solid #999;
-//   border-bottom: 1px solid #999;
-//   background-size:cover;
-//   }
+#main-img{
+  background: image-url('field_cow.JPG');
+  background-size: 40% 40%;
+  height: 600px;
+  width:100%;
+  border-top: 1px solid #999;
+  border-bottom: 1px solid #999;
+  background-size:cover;
+  }
 
 p{
-  color: #2ecc71;
-  text-shadow: 1px 1px 15px rgba(0,0,0,0.3);
-  font-family: 'Nunito';
+   color: #7f5000;
+  text-shadow: 0px 1px 2px rgba(255, 255, 255, 0.5);
+  font-family:'Roboto Condensed', sans-serif;
+  font-size: 20px;
   font-size: 250%;
   float:right;
   padding-left:75px;
@@ -67,11 +82,24 @@ icons-lined
 {
   margin-bottom:0;
 }
-#search-form{
-  margin:0 50px 0 150px;
+
+footer > p{
+  text-align: center;
+  margin-right:455px;
+  color: transparent;
+  font-size:16px;
+  font-family: 'Roboto Condensed', sans-serif;
+  background-color: #7f5000;
+  text-shadow: 0px 1px 2px rgba(255, 255, 255, 0.5);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
 }
 
-
-.field, .actions, h2{
-  margin:0 150px 0 150px;
+footer .love {
+  color: #F24825;
+  text-shadow: 0px 1px 2px rgba(255, 255, 255, 0.5);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
 }

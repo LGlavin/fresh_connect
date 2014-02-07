@@ -4,6 +4,12 @@ describe User do
   it { should have_valid(:username).when("abcde12345-_vbfabcde12345-_vbf") }
   it { should_not have_valid(:username).when(nil, '', "abcde12345-_vbfabcde12345-_vbft") }
   
+  it {should have_valid(:first_name).when("Jack") }
+  it { should_not have_valid(:first_name).when(nil, '') }
+
+  it { should have_valid(:last_name).when("Smith") }
+  it { should_not have_valid(:last_name).when(nil,'')}
+
   it { should have_valid(:email).when('fern@gully.com') }
   it { should_not have_valid(:email).when(nil, '')}
   

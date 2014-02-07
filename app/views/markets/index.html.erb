@@ -1,7 +1,7 @@
 
 
 
-<h2>Farmers Markets!</h2>
+<h2>Farmer's Markets</h2>
 
    
 
@@ -14,7 +14,7 @@
 
     <ul class="inline-list">
       <li><%= link_to 'Reviews', market_reviews_path(market) %></li>
-      <li><em>Added by <%= User.where(id: market.user_id) %></em></li>
+      <li><em>Added by <%= User.where(id: market.user_id).first.full_name %></em></li>
       <li><em>Recommended by <%= pluralize(market.recommendations.length, "user") %></em></li>
       <li><%= button_to 'Recommend', market_recommendations_path(market_id: market.id), class:'small secondary', render: :back %></li>
     </ul>

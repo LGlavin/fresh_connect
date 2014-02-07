@@ -14,13 +14,15 @@ end
     @market = Market.new
   end
 
-  def edit
+  def show
      @market = Market.find(params[:id])
+     @reviews = Review.where(market_id: @market.id)
+    @review = Review.where(market_id: @market.id, user_id: current_user.id).first
+    if @review.nil?
+      @review = Review.new
+      @review.build_comment
   end
-
-#   def show
-#      @market = Market.find(params[:id])
-# end
+end
   
 
    def create
@@ -33,17 +35,7 @@ end
   end
 end
 
- def update
-  @market = Market.find(params[:id])
-   @market.edit
-     redirect_to market_path, notice: 'Market was updated!'
- end
-
-  def destroy 
-    @market = Market.find(params[:id])
-    @market.destroy
-     redirect_to market_path, notice:'Market was successfully deleted'
- end 
+ 
 
   def market_params
   params.require(:market).permit(:name,:address)

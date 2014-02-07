@@ -79,10 +79,10 @@ $default-float: left;
 
 // Colors
 
-$primary-color: #29b865;
+$primary-color: #fff;
 // $secondary-color: #e9e9e9;
 $alert-color: #c60f13;
-$success-color: #5da423;
+$success-color:#fff;
 
 // Make sure border radius matches unless we want it different.
 
@@ -356,7 +356,7 @@ $success-color: #5da423;
 
 // We use these to build padding for buttons.
 
-$button-med: em-calc(1);
+$button-med: em-calc(5);
 // $button-tny: em-calc(7);
 // $button-sml: em-calc(9);
 // $button-lrg: em-calc(16);
@@ -368,13 +368,13 @@ $button-med: em-calc(1);
 
 // We use these to control button text styles.
 
-$button-font-family:'Nunito', sans-serif;
-$button-font-color: #ecf0f1;
+$button-font-family:'Roboto', sans-serif;
+$button-font-color: #7f5000;
 // $button-font-color-alt: #333;
-$button-font-med: em-calc(10);
+$button-font-med: em-calc(15);
 //$button-font-tny: em-calc(11);
- $button-font-sml: em-calc(11);
- $button-font-lrg: em-calc(11);
+ $button-font-sml: em-calc(15);
+ $button-font-lrg: em-calc(15);
 // $button-font-weight: ;
 // $button-font-align: center;
 
@@ -1255,12 +1255,12 @@ $button-border-style: none;
 
 // Background color for the top bar
 
- $topbar-bg-color: white;
+ $topbar-bg-color:#fff;
 // $topbar-bg: $topbar-bg-color;
 
 // Height and margin
 
-$topbar-height: 45px;
+$topbar-height: 40px;
 // $topbar-margin-bottom: 0;
 
 // Control Input height for top bar
@@ -1274,25 +1274,25 @@ $topbar-title-font-size: em-calc(17);
 
 // Style the top bar dropdown elements
 
-$topbar-dropdown-bg: #29b865;
-$topbar-dropdown-link-color:#29b865;
-$topbar-dropdown-link-bg: lighten($topbar-bg-color, 2%);
+$topbar-dropdown-bg: #7f5000;
+$topbar-dropdown-link-color:#7f5000;
+$topbar-dropdown-link-bg: lighten($topbar-bg-color, 5%);
 // $topbar-dropdown-toggle-size: 5px;
 // $topbar-dropdown-toggle-color: #fff;
 // $topbar-dropdown-toggle-alpha: 0.5;
 
 // Set the link colors and styles for top-level nav
 
- $topbar-link-color: #29b865;
-$topbar-link-color-hover: #29b865;
- $topbar-link-color-active: #29b865;
+ $topbar-link-color: #7f5000;
+$topbar-link-color-hover: #7f5000;
+ $topbar-link-color-active: #7f5000;
   $topbar-link-weight: bold;
 $topbar-link-font-size: em-calc(11);
 //$topbar-link-hover-Darken-by: 30%;
-// $topbar-link-bg-hover: darken($topbar-bg-color, 3%);
+$topbar-link-bg-hover: darken($topbar-bg-color, 10%);
 // $topbar-link-bg-active: darken($topbar-bg-color, 3%);
 
- $topbar-dropdown-label-color:#29b865;
+ $topbar-dropdown-label-color:#7f5000;;
  $topbar-dropdown-label-text-transform: uppercase;
 // $topbar-dropdown-label-font-weight: bold;
 // $topbar-dropdown-label-font-size: em-calc(10);
@@ -1303,8 +1303,8 @@ $topbar-link-font-size: em-calc(11);
 // $topbar-menu-link-transform: uppercase;
 // $topbar-menu-link-font-size: em-calc(13);
 // $topbar-menu-link-weight: bold;
-$topbar-menu-link-color: #29b865;
-$topbar-menu-icon-color: #29b865;
+$topbar-menu-link-color: #7f5000;
+$topbar-menu-icon-color: #7f5000;
 // $topbar-menu-link-color-toggled: #888;
 // $topbar-menu-icon-color-toggled: #888;
 
@@ -1316,8 +1316,8 @@ $topbar-menu-icon-color: #29b865;
 
 // Divider Styles
 
-$topbar-divider-border-bottom: solid .0px lighten($topbar-bg-color, 1%);
-//  $topbar-divider-border-top: solid 1px darken($topbar-bg-color, 10%);
+$topbar-divider-border-bottom: solid 1px lighten($topbar-bg-color, 10%);
+$topbar-divider-border-top: solid 1px darken($topbar-bg-color, 10%);
 
 // Sticky Class
 

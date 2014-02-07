@@ -5,6 +5,16 @@ class ReviewsController < ApplicationController
     @market = Market.find(params[:market_id])
   end
 
+  def index
+    if params[:market_id]
+      @market = Market.find( params[:market_id])
+      @reviews = Review.where( market_id: @market.id)
+    else 
+      @market = nil
+      @reviews = Review.all 
+   end
+end
+
   def create
     @review = Review.new(review_params)
     @review.user_id = current_user.id 
@@ -19,15 +29,7 @@ class ReviewsController < ApplicationController
     end
   end
 
-  def index
-    if params[:market_id]
-      @market = Market.find( params[:market_id])
-      @reviews = Review.where (market_id: @market.id)
-    else 
-      @market = nil
-      @reviews = Review.all 
-   end
-end
+  
 
 protected
   def review_params
