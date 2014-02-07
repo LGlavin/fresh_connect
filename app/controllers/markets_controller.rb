@@ -1,15 +1,15 @@
 class MarketsController < ApplicationController
+  
   def index
       if params[:search].present?
       @markets = Market.near(params[:search])
-    else
+     
+      else
        @markets = Market.all
-      
-       @json = @markets.all 
+       @json = @markets.all.to_gmaps4rails 
    end
- end
- 
-
+end
+  
   def new
     @market = Market.new
   end
@@ -18,15 +18,15 @@ class MarketsController < ApplicationController
      @market = Market.find(params[:id])
   end
 
-  def show
-     @market = Market.find(params[:id])
-end
+#   def show
+#      @market = Market.find(params[:id])
+# end
   
 
    def create
     @market = Market.new(market_params)
     if @market.save
-      flash[:notice] = "Market was successfully recorded!"
+      flash[:notice] = 'You created a market successfully!'
       redirect_to new_market_path
     else
       render :new
@@ -44,17 +44,9 @@ end
     @market.destroy
      redirect_to market_path, notice:'Market was successfully deleted'
  end 
- 
- def map
- end
-
 
   def market_params
   params.require(:market).permit(:name,:address)
   end
 end
-
-
-# geocoded_by :address
-# er_validation :geocode, :if => :address_changed?
 

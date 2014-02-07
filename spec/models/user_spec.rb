@@ -6,6 +6,9 @@ describe User do
   
   it { should have_valid(:email).when('fern@gully.com') }
   it { should_not have_valid(:email).when(nil, '')}
+  
+  it { should have_many(:markets) }
+  it { should have_many(:recommendations) }
 
   it 'has matching password confirmation for the password' do
     user = User.new

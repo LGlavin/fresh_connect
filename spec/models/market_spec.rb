@@ -1,13 +1,11 @@
 require 'spec_helper'
 
 describe Market do
-  
-  it { should have_valid(:description).when('best haverst') }
+ 
 
-  it { should have_valid(:address).when('44 lakewood ave') }
-  
-  it { should have_valid(:longitude).when('-70.59368') }
+  it { should validate_presence_of(:name) }
+  it { should validate_presence_of(:address) }
+  it { should validate_presence_of(:user) }
 
-  it { should have_valid(:latitude).when('41.45617') }
 
 end

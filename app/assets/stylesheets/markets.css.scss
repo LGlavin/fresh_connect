@@ -1,0 +1,77 @@
+// Place all the styles related to the recipes controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#logo img {
+   width: 45px;
+   margin-bottom:10px;
+   
+}
+body{
+  font-color: #2ecc71;
+}
+
+#favorites-link, #basket-link {
+  position: relative;
+}
+
+.checkout-button {
+  float: right;
+}
+
+
+.imgLiquid {
+  width: 200px;
+  height:240px; 
+}
+
+#logo a {
+  color: #2ecc71;
+  text-shadow: 1px 1px 15px rgba(0,0,0,0.3);
+  font-family: 'Nunito';
+  font-size: 150%;
+}
+
+#background-img {
+  background: image-url('farmer.png');
+}
+
+#favorites-link, #basket-link {
+  position: relative;
+}
+
+.checkout-button {
+  float: right;
+}
+
+// #main-img{
+//   background: image-url('fog_hay.JPG');
+//   background-size: 100% 100%;
+//   height: 1000px;
+//   width:100%;
+//   border-top: 1px solid #999;
+//   border-bottom: 1px solid #999;
+//   background-size:cover;
+//   }
+
+p{
+  color: #2ecc71;
+  text-shadow: 1px 1px 15px rgba(0,0,0,0.3);
+  font-family: 'Nunito';
+  font-size: 250%;
+  float:right;
+  padding-left:75px;
+}
+
+icons-lined
+{
+  margin-bottom:0;
+}
+#search-form{
+  margin:0 50px 0 150px;
+}
+
+
+.field, .actions, h2{
+  margin:0 150px 0 150px;
+}

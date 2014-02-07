@@ -12,5 +12,11 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require bootstrap
+//= require jquery.ui.all
+//= require gmaps4rails/gmaps4rails.googlemaps
+//= require gmaps4rails/gmaps4rails.base
+//= require foundation
 //= require_tree .
+
+$(function(){ $(document).foundation(); });
+$(function(){ $(document).foundation(); });

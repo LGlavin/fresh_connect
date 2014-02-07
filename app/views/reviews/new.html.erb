@@ -1,0 +1,15 @@
+<% @review.errors.full_messages.each do | error | %>
+  <%= content_tag :p, error %>
+<% end %>
+
+<h3>Review: <%= link_to @market.name %> </h3>
+<% if !current_user %>
+  <p>You must sign in to review this farmer's market.</p>
+<%- end -%>
+
+<%= simple_form_for([@market, @review]) do |f| %>
+  <%= f.input_field :body, placeholder: 'What I think about this farmers market' %>
+  <%= f.button :submit %>
+<% end %>
+
+<%= link_to 'Cancel', market_reviews_path(@market) %>

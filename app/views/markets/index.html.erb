@@ -1,84 +1,23 @@
-<div id="market-front">
-  <style>
-
-    #map { width:100%; height:1000px; }
-  </style>
 
 
 
-<div id='map'>
+<h2>Farmers Markets!</h2>
 
+   
 
-
-<script src='http://api.tiles.mapbox.com/mapbox.js/v1.3.1/mapbox.js'></script>
-  <link href='http://api.tiles.mapbox.com/mapbox.js/v1.3.1/mapbox.css' rel='stylesheet' />
-
-
-</div>
-</div>
-<script type='text/javascript'>
-
-var map = L.mapbox.map('map', 'examples.map-9ijuk24y')
-     .setView([37.9, -77], 6);
-    <% @markets = Market.all %>
-<% @markets.each do |market| %>
-        <% if  market.longitude.present? %>
-L.mapbox.markerLayer({
-
-    type: 'Feature',
-    geometry: {
-        type: 'Point',
-        coordinates: [<%= market.longitude %>, <%= market.latitude %>]
-    },
-       properties: {
-        title: '<%= market.name %>',
-        description: '<%= market.address %>',
-        'marker-size': 'small',
-        'marker-color': '#f44'
-    }
-}).addTo(map);
-    <% end %>
-<% end %>
-
-</script>
-
-
-
-<h3>Farmer's Markets</h3>
-
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Address</th>
-      <!-- th> Time </th>
-      <th> Days </th> -->
-     
-    
+  <% @markets.each do |market| %>
+    <ul class="no-bullet">
       
-    </tr>
-  </thead>
+      <strong><li><%= link_to market.name %></li></strong>
+      <li><%= market.description %></li>
+    </ul>
 
-  <tbody>
-    <% @markets.each do |market| %>
-      <tr>
-        <td><%= market.name %></td>
-        <td><%= market.address %></td>
-        <td><%= market.datetime %></td>
-        <td><%= market.description %></td>
-       
-
-        <td><%= link_to 'Show', market %></td>
-        <td><%= link_to 'Edit', market %></td>
-        <td><%= link_to 'Delete', market, method: :delete, data: { confirm: 'Are you sure you want to delete this market?' } %></td> 
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-<div class="links">
-<%= link_to 'New Market', new_market_path %>
-</div>
-
+    <ul class="inline-list">
+      <li><%= link_to 'Reviews', market_reviews_path(market) %></li>
+      <li><em>Added by <%= User.where(id: market.user_id) %></em></li>
+      <li><em>Recommended by <%= pluralize(market.recommendations.length, "user") %></em></li>
+      <li><%= button_to 'Recommend', market_recommendations_path(market_id: market.id), class:'small secondary', render: :back %></li>
+    </ul>
+   <hr />
+  <%- end -%>
 </div>

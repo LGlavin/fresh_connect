@@ -18,7 +18,7 @@ scenario 'user enters valid information' do
   fill_in 'Email', with: 'example@example.com'
   fill_in 'user_password', with: '12345678'
   fill_in 'Password confirmation', with: '12345678'
-  click_button 'Sign up'
+  click_button 'Sign Up'
 
 
   #expect(page).to have_content 'Welcome! You have signed up successfully.'
@@ -27,7 +27,7 @@ scenario 'user enters valid information' do
  scenario 'user does not enter vaild information' do
   visit root_path
   click_link 'Sign Up'
-  click_button 'Sign up'
+  click_button 'Sign Up'
 
   expect(page).to have_content("can't be blank")
   expect(page).to_not have_content("Sign Out")
@@ -39,9 +39,9 @@ scenario 'with a conflicting password' do
   click_link 'Sign Up'
   fill_in 'user_password', with: 'password'
   fill_in 'Password confirmation', with: 'Somethingdifferent'
-  click_button 'Sign up'
+  click_button 'Sign Up'
   expect(page).to have_content("doesn't match")
-  expect(page).to_not have_content("Sign Out")
+  expect(page).to_not have_content("Log Out")
  end
 end
 

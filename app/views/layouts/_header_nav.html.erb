@@ -1,0 +1,40 @@
+<div id="fixed">
+  <nav class="top-bar">
+
+    <ul class="title-area">
+      <li class="name" id="logo">
+        <h1><%= link_to "#{image_tag("beets.jpg")} Fresh Connect".html_safe, root_path %> </h1>
+         </li>
+          <li class="toggle-topbar menu-icon"><%= link_to 'Menu', '#' %></li>
+        </ul>
+
+
+    <section class="top-bar-section">
+   <!--  Right Nav Section -->
+      <ul class="right">
+        <li class="divider"></li>
+        <li class="has-form nav-bar-coloring">
+          <%= form_tag root_path, method: 'get' do %>
+            <div class="row collapse">
+              <div class="small-8 columns">
+                <%= text_field_tag :search, params[:search] %>
+              </div>
+              <div class="small-4 columns">
+                <%= submit_tag "Search", class: "button" %>
+              </div>
+            </div> 
+          <% end %>
+        </li>
+
+        <li class="divider"></li>
+
+        <% if user_signed_in? %>
+          <%= render partial: 'layouts/header_nav_sign_in' %>
+        <% else %>
+          <%= render partial: 'layouts/header_nav_sign_out' %>
+        <% end %>
+
+      </ul>
+    </section>
+  </nav>
+</div>

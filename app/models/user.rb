@@ -8,11 +8,10 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
   
-  has_many :markets,
-  inverse_of: :user,
-  dependent: :destroy
+  has_many :reviews, inverse_of: :user
+  has_many :markets, inverse_of: :user 
+  has_many :recommendations, inverse_of: :user
+  
+  
 
-#   geocoded_by :ip_address,
-#   :latitude => :lat, :longitude => :lon
-# after_validation :geocode
-  end
+end

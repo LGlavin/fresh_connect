@@ -1,11 +1,19 @@
-class Market < ActiveRecord::Base
-  belongs_to :user
-  validates_presence_of :name
-  #validates_presence_of :longitude
-  #validates_presence_of :latitude
-  #validates_presence_of :address
-  #validates_presence_of :datetime
+class Market < ActiveRecord::Base 
+  validates :name, presence: true, uniqueness: true
+  validates_presence_of :address
+  
+  has_many :reviews,
+  {
+    inverse_of: :market,
+    dependent: :destroy
+  }
 
+  belongs_to :user,
+  {
+    inverse_of: :markets
+  }
+   has_many :recommendations,
+    inverse_of: :market
 
   def self.search(search)
     where("address like ?", "%#{search}%")
@@ -25,6 +33,6 @@ after_validation :geocode, :if => :address_changed?
 
 def gmaps4rails_address
 #describe how to retrieve the address from your model, if you use directly a db column, you can dry your code, see wiki
-  "#{address}" 
+  "#{name}, #{address}" 
 end
 end

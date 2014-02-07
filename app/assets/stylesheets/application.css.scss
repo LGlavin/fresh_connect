@@ -1,7 +1,3 @@
-@import url(http://fonts.googleapis.com/css?family=Delius+Swash+Caps);
-@import url(http://fonts.googleapis.com/css?family=Varela+Round);
-@import url(http://fonts.googleapis.com/css?family=Sintony);
-
 
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
@@ -14,18 +10,9 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require_self
- *= require gmaps4rails
+ *= require foundation_and_overrides
+ *= require jquery.ui.all
  *= require_tree .
  */
-//$body-bg: #ecf0f1;
-$navbar-default-bg:#ecf0f1;
-$navbar-default-link-color:#e74c3c; 
-$navbar-default-link-hover-color:white;
-//$navbar-default-brand-hover-bg: #e74c3c;
-//$navbar-default-brand-link-color: #e74c3c;
-
-
-@import 'bootstrap';
-@import 'bootstrap_and_customization';
-
-
+ @import 'foundation-icons';
+@import url(http://fonts.googleapis.com/css?family=Nunito:400,300);

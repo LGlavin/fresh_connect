@@ -1,0 +1,21 @@
+<% if @reviews %>
+  <h1><%= "#{@market.name}'s Reviews" %></h1>
+
+  <% if !current_user %>
+    <p>You must <%= link_to 'Log In', new_user_session_path %> to review this  farmer's market.</p>
+  <%- else -%>
+    <% @reviews.each do |review| %>
+    <ul class="no-bullet">
+      <li><%= content_tag :td, review.body %></li>
+      <li><em>-<%= content_tag :td, review.user.full_name %></em></li>
+    </ul>
+    <% end %>
+  <% end %>
+
+  <%- if @reviews.length == 0 %>
+    <%= link_to "Be the first to review this", new_market_review_path %>
+  <% else %>
+    <%= link_to "Review this", new_market_review_path %>
+  <% end %>
+<% end %>
+
