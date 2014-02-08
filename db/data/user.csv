@@ -1,5 +1,12 @@
-email,username,password,password_confirmation
-"allison6@gmail.com","Allison34","12ab34cd","12ab34cd"
-"helen18@gmail.com","Helen51","helen1234","helen1234"
-"Josh26@gmail.com","Josh02","Josh1234","Josh1234"
-"Jamie26@gmail.com","Jamie23","Jamie1234","Jamie1234"
+email,username,first_name,last_name,password,password_confirmation
+"allison6@gmail.com","Allison34","Allison","Smith","12ab34cd","12ab34cd"
+"helen18@gmail.com","Helen51","Helen","Killer","helen1234","helen1234"
+"Josh26@gmail.com","Josh02","Josh","Jones","Josh1234","Josh1234"
+"Jamie26@gmail.com","Jamie23","Jamie","Thunder","Jamie1234","Jamie1234"
+"Gregory@gmail.com","Gregory11","Gregory","Jackson","Greg1234","Greg1234"
+"Paul@gmail.com","Paul03","Paul","Revere","Paul1234","Paul134"
+"Christine@gmail.com","Christine01","Christine","Dyment","2456323","2456323"
+"Robbie78@gmail.com","Robbie78","Robbert","Campbell","turtle7","turtle7"
+"Danielle34@gmail.com","Danielle3","Danielle","Lopes","frog4567","frog4567"
+"Jason@gmail.com","Jason05","Jason","Henry","alligator","alligator"
+"Mike2@gmail.com","Mike2","Mike","Sponge","ocean8976","ocean8976"
