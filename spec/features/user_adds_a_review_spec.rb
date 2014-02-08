@@ -31,8 +31,7 @@ feature 'user reviews a market', %Q{
     expect(Review.count).to eql(total_count + 1)
     new_user_reviews_count = Review.where('user_id = ?', user.id).count
     expect(new_user_reviews_count).to eql( prev_user_reviews_count + 1 )
-    expect(page).to have_content('Thank you for your review!')
-
+   
     expect(page).to have_content(market.name)
 
   end
@@ -80,7 +79,7 @@ feature 'user reviews a market', %Q{
     click_on 'Cancel'
 
     expect(Review.count).to eql(total_count)
-    expect(page).to have_content(posting.title)
+    expect(page).to have_content(market.name)
   end
 
 end

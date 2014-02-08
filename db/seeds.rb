@@ -34,6 +34,8 @@ CSV.foreach('db/data/user.csv', :headers => true) do |row|
   user_records[row[0]] = {
     :username => row['username'],
     :email => row['email'],
+    :first_name => row['first_name'],
+    :last_name => row['last_name'],
     :password => row['password'],
     :password_confirmation => row['password_confirmation'],
   }

@@ -3,10 +3,8 @@ class MarketsController < ApplicationController
   def index
       if params[:search].present?
       @markets = Market.near(params[:search])
-     
-      else
+     else
        @markets = Market.all
-       @json = @markets.all.to_gmaps4rails 
    end
 end
   
@@ -38,7 +36,7 @@ end
  
 
   def market_params
-  params.require(:market).permit(:name,:address)
+  params.require(:market).permit(:name,:address,:city)
   end
 end
 

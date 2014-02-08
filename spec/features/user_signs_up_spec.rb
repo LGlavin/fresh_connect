@@ -15,6 +15,8 @@ scenario 'user enters valid information' do
   visit new_user_registration_path
   click_link 'Sign Up'
   fill_in 'Username', with: 'Lizrtyi5'
+  fill_in 'First name', with: "Elizabeth"
+  fill_in 'Last name', with: 'Borden'
   fill_in 'Email', with: 'example@example.com'
   fill_in 'user_password', with: '12345678'
   fill_in 'Password confirmation', with: '12345678'
