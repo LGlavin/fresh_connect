@@ -6,9 +6,9 @@ FactoryGirl.define do
     address "Lakewood Ave"
     city "Easton"
     state "MA"
-    postal_code 02375
-    latitude 1.5
-    longitude 1.5
-    datetime 'monday'
+    postal_code "02375"
+    latitude "1.5"
+    longitude "1.5"
+    datetime "monday"
   end
 end

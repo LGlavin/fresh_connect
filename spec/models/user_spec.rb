@@ -1,8 +1,8 @@
 require 'spec_helper'
 
 describe User do
-  it { should have_valid(:username).when("abcde12345-_vbfabcde12345-_vbf") }
-  it { should_not have_valid(:username).when(nil, '', "abcde12345-_vbfabcde12345-_vbft") }
+  it { should have_valid(:username).when("farmgirl") }
+  it { should_not have_valid(:username).when(nil, '') }
   
   it {should have_valid(:first_name).when("Jack") }
   it { should_not have_valid(:first_name).when(nil, '') }

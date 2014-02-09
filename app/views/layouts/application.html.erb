@@ -8,8 +8,8 @@
   <head>
   	<meta charset="utf-8" />
      <link href='http://fonts.googleapis.com/css?family=Pacifico|Inika' rel='stylesheet' type='text/css'>
-    <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
-
+    
+      <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
   	<!-- Uncomment to make IE8 render like IE7 -->
   	<!-- <meta http-equiv="X-UA-Compatible" content="IE=7" /> -->
 
@@ -20,6 +20,9 @@
 
   	<%= stylesheet_link_tag    "application" %>
   	<%= javascript_include_tag "vendor/custom.modernizr" %>
+    <script src="http://api.tiles.mapbox.com/mapbox.js/v1.0.2/mapbox.js"></script>
+<link href="http://api.tiles.mapbox.com/mapbox.js/v1.0.2/mapbox.css" rel="stylesheet" />
+
     <%= csrf_meta_tags %>
   </head>
   <div id= "background-img">

@@ -12,7 +12,20 @@ h2, h3, h4, h5, h6 {
   font-family:'Roboto Condensed', sans-serif;
   font-size: 30px;
 }
-
+.inline-list{
+  padding-left:45px;
+  font-size:14px;
+}
+.no-bullet{
+  padding:0 45px 5px 45px;
+}
+#list-markets{
+ background: image-url('retina_wood.png');
+}
+.title{
+  text-align:center;
+  font-size:50px;
+}
 a{
    color: #F24825;
 
@@ -51,6 +64,12 @@ color:#7f5000;
 
   
 }
+
+top-bar{
+  margin-bottom:0;
+}
+
+
 
 // #background-img {
 //   background: image-url('canvas.jpg');

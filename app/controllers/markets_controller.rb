@@ -11,32 +11,27 @@ end
   def new
     @market = Market.new
   end
-
-  def show
-     @market = Market.find(params[:id])
-     @reviews = Review.where(market_id: @market.id)
-    @review = Review.where(market_id: @market.id, user_id: current_user.id).first
-    if @review.nil?
-      @review = Review.new
-      @review.build_comment
-  end
-end
   
 
    def create
     @market = Market.new(market_params)
-    if @market.save
+    if @market.save!
       flash[:notice] = 'You created a market successfully!'
-      redirect_to new_market_path
+      redirect_to market_path(@market)
     else
       render :new
   end
 end
 
+
+  def show
+     @market = Market.find(params[:id])
+  end
+
  
 
   def market_params
-  params.require(:market).permit(:name,:address,:city)
+  params.require(:market).permit(:name,:address,:city,:state,:postal_code)
   end
 end
 
