@@ -4,11 +4,11 @@
 
 .column{
  padding-top: 35px;
- padding-left:750px;
+ padding-left:550px;
 }
 
 h2, h3, h4, h5, h6 {
-  color: #F24825;
+  color: #fff;
   font-family:'Roboto Condensed', sans-serif;
   font-size: 30px;
 }
@@ -33,12 +33,15 @@ a{
 a:hover{
  color: #7f5000;
 }
+
 h2{
   padding-left: 105px;
 }
+
 .btn-default{
 color:#F24825;
 }
+
 .btn-default:hover{
 color:#7f5000;
 }
@@ -77,14 +80,29 @@ top-bar{
 
 
 #main-img{
-  background: image-url('field_cow.JPG');
-  background-size: 40% 40%;
-  height: 600px;
+  background: image-url('local_blue.jpg');
+  // background-size: 40% 40%;
+  height: 400px;
   width:100%;
   border-top: 1px solid #999;
   border-bottom: 1px solid #999;
   background-size:cover;
   }
+.icon{
+  height:400px;
+  width:100%;
+}
+
+#icon-1{
+
+}
+#icon-2{
+
+}
+
+#icon-3{
+
+}
 
 p{
    color: #7f5000;

@@ -24,7 +24,7 @@ feature 'user recommends a posting', %Q{
     click_button 'Recommend'
 
     expect(Recommendation.count).to eql(prev_count + 1)
-    #expect(page).to have_content("You recommended #{market.name}")
+    expect(page).to have_content("You recommended #{market.name}")
     expect(Recommendation.last.user_id).to eql(user.id)
     expect(Recommendation.last.market_id).to eql(market.id)
   end
