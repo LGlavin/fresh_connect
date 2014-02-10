@@ -2,16 +2,25 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+body{
+  margin: 0 auto;
+}
+
 .column{
- padding-top: 35px;
+ padding-top: 45px;
  padding-left:550px;
 }
 
-h2, h3, h4, h5, h6 {
-  color: #F24825;
+ h3, h4, h5, h6 {
+  color: #fff;
   font-family:'Roboto Condensed', sans-serif;
   font-size: 30px;
+  text-shadow: 5px 5px 15px rgba(255,255,255, 0.3);
 }
+h2 {
+  color: #2c3e50;
+}
+
 .inline-list{
   padding-left:45px;
   font-size:14px;
@@ -19,39 +28,42 @@ h2, h3, h4, h5, h6 {
 .no-bullet{
   padding:0 45px 5px 45px;
 }
+
 #list-markets{
- background: image-url('retina_wood.png');
+ background: image-url('farmer.png');
 }
+
 .title{
   text-align:center;
   font-size:50px;
+  color:#2c3e50;
 }
 a{
-   color: #F24825;
+   color: #2c3e50;
 
 }
-a:hover{
- color: #7f5000;
-}
+
 
 h2{
   padding-left: 105px;
 }
 
 .btn-default{
-color:#F24825;
+  color:  #2c3e50;
+  text-shadow: 0px 1px 2px rgba(255,255,255, 0.3);
 }
 
-.btn-default:hover{
-color:#7f5000;
-}
 
 .input-append{
   width:200px;
 
 }
 .button > .success{
-  color:#7f5000;
+  color:#2c3e50;
+}
+
+.pagination{
+  padding: 15px;
 }
 
 .form-group{
@@ -60,12 +72,15 @@ color:#7f5000;
 }
 
 #logo a {
-  color: #7f5000;
-  text-shadow: 0px 1px 2px rgba(255, 255, 255, 0.5);
   font-family:'Roboto Condensed', sans-serif;
   font-size: 25px;
+ 
+}
 
-  
+
+#logo a:hover,.btn-default:hover {
+   color: #34495e;
+   text-shadow: 0px 25px 25px rgba(255,255,255, 0.3);
 }
 
 top-bar{
@@ -73,18 +88,10 @@ top-bar{
 }
 
 
-
-// #background-img {
-//   background: image-url('canvas.jpg');
-// }
-#row{
-  margin-bottom:-30px;
-}
-
 #main-img{
   background: image-url('local_blue.jpg');
   background-size: 100% 100%;
-  height: 400px;
+  height: 500px;
   width:100%;
   border-top: 1px solid #999;
   border-bottom: 1px solid #999;
@@ -92,7 +99,7 @@ top-bar{
   }
 
 p{
-   color: #7f5000;
+  color: #2c3e50;
   text-shadow: 0px 1px 2px rgba(255, 255, 255, 0.5);
   font-family:'Roboto Condensed', sans-serif;
   font-size: 20px;
@@ -101,19 +108,21 @@ p{
   padding-left:75px;
 }
 
-icons-lined
-{
-  margin-bottom:0;
+
+.review{
+  font-size:20px;
+  padding-right:100px;
+
 }
 
-footer > p{
+#logo a, footer > p{
   text-align: center;
   margin-right:455px;
   color: transparent;
-  font-size:16px;
+  font-size:20px;
   font-family: 'Roboto Condensed', sans-serif;
-  background-color: #7f5000;
-  text-shadow: 0px 1px 2px rgba(255, 255, 255, 0.5);
+  background-color:  #2c3e50;
+  text-shadow: 0px 1px 2px rgba(255,255,255, 0.3);
   background-clip: text;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -121,7 +130,7 @@ footer > p{
 
 footer .love {
   color: #F24825;
-  text-shadow: 0px 1px 2px rgba(255, 255, 255, 0.5);
+  text-shadow: 0px 1px 2px rgba(255,255,255, 0.3);
   background-clip: text;
   -webkit-background-clip: text;
   -moz-background-clip: text;

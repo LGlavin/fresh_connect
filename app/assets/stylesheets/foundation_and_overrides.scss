@@ -304,10 +304,10 @@ $success-color:#fff;
 // $input-font-size: em-calc(14);
 // $input-bg-color: #fff;
 // $input-focus-bg-color: darken(#fff, 2%);
-// $input-border-color: darken(#fff, 20%);
+$input-border-color: #6084a7;
 // $input-focus-border-color: darken(#fff, 40%);
 // $input-border-style: solid;
-// $input-border-width: 1px;
+ $input-border-width: 1px;
 // $input-disabled-bg: #ddd;
 // $input-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
 // $input-include-glowing-effect: true;
@@ -884,7 +884,7 @@ $button-border-style: none;
 
 // We use these for currently selected anchor links
 
-// $pagination-link-current-background: $primary-color;
+$pagination-link-current-background: $primary-color;
 // $pagination-link-current-font-color: #fff;
 // $pagination-link-current-font-weight: bold;
 // $pagination-link-current-cursor: default;
@@ -1261,11 +1261,11 @@ $button-border-style: none;
 // Height and margin
 
 $topbar-height: 40px;
-// $topbar-margin-bottom: 0;
+$topbar-margin-bottom: -5px;
 
 // Control Input height for top bar
 
-// $topbar-input-height: 2.45em;
+$topbar-input-height: 2.45em;
 
 // Controlling the styles for the title in the top bar
 
@@ -1274,8 +1274,8 @@ $topbar-title-font-size: em-calc(17);
 
 // Style the top bar dropdown elements
 
-$topbar-dropdown-bg: #7f5000;
-$topbar-dropdown-link-color:#7f5000;
+$topbar-dropdown-bg: #2c3e50;
+$topbar-dropdown-link-color:#2c3e50;
 $topbar-dropdown-link-bg: lighten($topbar-bg-color, 5%);
 // $topbar-dropdown-toggle-size: 5px;
 // $topbar-dropdown-toggle-color: #fff;
@@ -1283,9 +1283,9 @@ $topbar-dropdown-link-bg: lighten($topbar-bg-color, 5%);
 
 // Set the link colors and styles for top-level nav
 
- $topbar-link-color: #7f5000;
-$topbar-link-color-hover: #7f5000;
- $topbar-link-color-active: #7f5000;
+ $topbar-link-color: #2c3e50;
+$topbar-link-color-hover: #2c3e50;
+ $topbar-link-color-active: #2c3e50;
   $topbar-link-weight: bold;
 $topbar-link-font-size: em-calc(11);
 //$topbar-link-hover-Darken-by: 30%;
@@ -1303,8 +1303,8 @@ $topbar-link-bg-hover: darken($topbar-bg-color, 10%);
 // $topbar-menu-link-transform: uppercase;
 // $topbar-menu-link-font-size: em-calc(13);
 // $topbar-menu-link-weight: bold;
-$topbar-menu-link-color: #7f5000;
-$topbar-menu-icon-color: #7f5000;
+$topbar-menu-link-color: #2c3e50;
+$topbar-menu-icon-color:#2c3e50;
 // $topbar-menu-link-color-toggled: #888;
 // $topbar-menu-icon-color-toggled: #888;
 
