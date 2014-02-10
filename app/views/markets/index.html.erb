@@ -1,15 +1,13 @@
 <div id="list-markets">
 <h2 class ="title">Farmer's Markets</h2>
-
-    
-
+<%= paginate @markets %>
 
   <% @markets.each do |market| %>
     <ul class="no-bullet">
       
       <strong><li><%= link_to market.name %></li></strong>
        <li><%= market.address%></li>
-        <li><%= market.city%></li>
+       <li><%= market.city%></li>
         <li><%= market.state%></li>
         <li><%= market.postal_code%></li>
       
@@ -24,5 +22,5 @@
    <hr/>
   <%- end -%>
 </div>
-
 </div>
+ 

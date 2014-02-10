@@ -30,7 +30,7 @@ feature 'user creates a new market', %Q{
     expect(Market.count).to eql(prev_market_count + 1)
 
 
-    expect(page).to have_content('You created a market successfully!')
+    expect(page).to have_content('Thank for adding your market to the list!')
   end
 
   scenario 'create a new market with invalid info' do
@@ -46,7 +46,8 @@ feature 'user creates a new market', %Q{
     visit new_market_path
    
     click_button 'Create Market'
-    expect(Market.count).to eql(prev_market_count + 1)
-    expect(page).to have_content("You failed to a make a market")
+    expect(Market.count).to eql(prev_market_count)
+    expect(page).to_not have_content('Thank for adding your market to the list!')
+    expect(page).to have_content("can't be blank")
   end
 end
