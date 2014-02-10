@@ -45,7 +45,9 @@ gem 'faker'
 gem 'ransack'
 gem 'simple_form'
 
-gem 'rails_12factor', group: :production
+group :production, :staging do 
+  gem 'rails_12factor'
+end
 
 
 gem 'devise'
