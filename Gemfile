@@ -17,7 +17,7 @@ gem 'coffee-rails', '~> 4.0.0'
 
 
 # Use jquery as the JavaScript library
-
+gem 'flexslider'
 gem 'jquery-ui-rails'
 gem 'jquery-rails'
 gem 'zurb-foundation'
