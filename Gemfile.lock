@@ -1,3 +1,9 @@
+GIT
+  remote: https://github.com/fiedl/Google-Maps-for-Rails.git
+  revision: c159503f5b244f0528482020f6d81215264149ad
+  specs:
+    gmaps4rails (2.0.1)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -221,6 +227,7 @@ DEPENDENCIES
   foundation-icons-sass-rails
   foundation_rails_helper
   geocoder
+  gmaps4rails (>= 2.0.1)!
   jbuilder (~> 1.2)
   jquery-rails
   jquery-ui-rails
