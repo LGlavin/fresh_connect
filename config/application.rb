@@ -14,6 +14,7 @@ module FreshConnect
       config.assets.precompile += [
       'market.css.scss'
     ]
+    config.assets.precompile += %w( vendor/custom.modernizr )
 
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
