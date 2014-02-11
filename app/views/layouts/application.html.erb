@@ -19,10 +19,7 @@
   	<title><%= content_for?(:title) ? yield(:title) : "fresh connect" %></title>
 
   	<%= stylesheet_link_tag "application" %>
-     
-      <%= javascript_include_tag "application" %>
-
-  	<%= javascript_include_tag "vendor/custom.modernizr" %>
+    <%= javascript_include_tag "vendor/custom.modernizr" %>
   
 
     <%= csrf_meta_tags %>
@@ -41,14 +38,11 @@
     
     </div>
    
-      <%= yield :script %>
-
-       <%= yield :javascript %>
 
           <footer>
       <p>Made with <i class='icon-heart love'></i> in Boston by Liz </p>
     </footer>
   
-
+     <%= javascript_include_tag "application" %>
   </body>
 </html>
