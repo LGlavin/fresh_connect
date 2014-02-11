@@ -18,9 +18,9 @@
     
   	<title><%= content_for?(:title) ? yield(:title) : "fresh connect" %></title>
 
-  	<%= stylesheet_link_tag "application", :media => "all" %>
+  	<%= stylesheet_link_tag "application" %>
 
-     <%= javascript_include_tag "application" %>
+  
 
   	<%= javascript_include_tag "vendor/custom.modernizr" %>
   
@@ -50,6 +50,6 @@
     </footer>
   
 
-
+   <%= javascript_include_tag "application" %>
   </body>
 </html>
