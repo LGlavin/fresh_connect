@@ -46,9 +46,7 @@ gem 'ransack'
 gem 'simple_form'
 gem 'sprockets_better_errors'
 
-group :production, :staging do 
-  gem 'rails_12factor'
-end
+gem 'rails_12factor', group: :production
 
 
 gem 'devise'
