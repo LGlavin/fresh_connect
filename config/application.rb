@@ -8,7 +8,7 @@ Bundler.require(:default, Rails.env)
 module FreshConnect
   class Application < Rails::Application
       config.assets.precompile += [
-      'market.css'
+      'market.css.scss'
     ]
 
     # Settings in config/environments/* take precedence over those specified here.
