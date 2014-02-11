@@ -44,6 +44,7 @@ gem 'gmaps4rails', '>= 2.0.1', git: 'https://github.com/fiedl/Google-Maps-for-Ra
 gem 'faker'
 gem 'ransack'
 gem 'simple_form'
+gem 'sprockets_better_errors'
 
 group :production, :staging do 
   gem 'rails_12factor'
