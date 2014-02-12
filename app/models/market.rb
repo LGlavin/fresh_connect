@@ -84,19 +84,19 @@ class Market < ActiveRecord::Base
     where("address like ?", "%#{search}%")
   end
 
-# def address
-#   [city, state].compact.join(', ')
-# end
+def address
+  [city, state].compact.join(', ')
+end
 
 
   geocoded_by :address
 after_validation :geocode, :if => :address_changed?
 
 
-  # acts_as_gmappable :process_geocoding => false
+  acts_as_gmappable :process_geocoding => false
 
-# def gmaps4rails_address
-# #describe how to retrieve the address from your model, if you use directly a db column, you can dry your code, see wiki
-#   "#{name}, #{address}" 
-# end
+def gmaps4rails_address
+#describe how to retrieve the address from your model, if you use directly a db column, you can dry your code, see wiki
+  "#{name}, #{address}" 
+end
 end
