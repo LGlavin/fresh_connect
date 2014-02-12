@@ -3,6 +3,8 @@ class MarketsController < ApplicationController
   def index
       if params[:search].present?
       @markets = Market.near(params[:search]).page(params[:page]).per(10)
+   else
+    @markets = Market.all.page(params[:page]).per(10)
   end
 end
 
