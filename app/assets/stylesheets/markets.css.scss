@@ -2,13 +2,13 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 //= depend_on_asset "local_blue.jpg"
-body{
-  margin: 0 auto;
-}
+
 
 .column{
+  height:200px;
+  width:105%;
  padding-top: 45px;
- padding-left:550px;
+ padding-left:555px;
 }
 
  h3, h4, h5, h6 {
@@ -191,7 +191,7 @@ p{
   font-size: 20px;
   font-size: 250%;
   float:right;
-  padding-left:75px;
+
 }
 
 
@@ -200,10 +200,14 @@ p{
   padding-right:100px;
 
 }
+footer{
+  height:100px;
+  width:100%;
+}
 
 footer > p{
   text-align: center;
-  margin-right:455px;
+  margin-left:-150px;
   color: transparent;
   font-size:20px;
   font-family: 'Roboto Condensed', sans-serif;

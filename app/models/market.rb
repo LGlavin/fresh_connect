@@ -84,9 +84,9 @@ class Market < ActiveRecord::Base
     where("address like ?", "%#{search}%")
   end
 
-# def address
-#   [city, state].compact.join(', ')
-# end
+def address
+  [city, state].compact.join(', ')
+end
 
 
   geocoded_by :address
