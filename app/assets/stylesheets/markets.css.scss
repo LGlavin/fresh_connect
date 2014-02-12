@@ -6,6 +6,7 @@
 
 body{
   margin: 0 auto;
+  
 
 }
 
@@ -106,8 +107,9 @@ h2, h3{
 //     -o-transform:rotate(-40deg); /* Opera */
 // }
 /* markets page */
- #row{
+ .market-new{
   background-image:image-url('cardboard.jpg');
+  height:600px;
 }
 
 textarea{
