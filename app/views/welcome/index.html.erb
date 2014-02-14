@@ -2,14 +2,15 @@
 <div class="column">
 
 
- <h3 class="img-title">Connecting you to locally grown food 
-<br>
-       where are the farmer's markets near you? </h3>
+ <h4 class="img-title">Connecting you to locally grown food
+       
+      <br />
+ where are the farmer's markets near you? </h4>
        
   <div class="form-find">
   <%= form_tag(markets_path, :method => "get", class: "navbar-form", id: "search-form") do %>
     <div class="input-append">
-      <%= text_field_tag :search, params[:search], class: "span2", placeholder: "address, city, or zip" %>
+      <%= text_field_tag :search, params[:search], class: "span2", placeholder: "zip code" %>
      <% end %>
       <br>
         <br>
@@ -18,4 +19,24 @@
        
 </div>
 </div>
+</div>
+<div id="icons">
+ <div class="clock">
+   <p><i class="fa fa-calendar-o fa-5x"></i> </p>
+   <p class="details">
+     Find the nearest markets to you. Mark them on your calendar. Buy fresh local food daily or weekly! 
+   </p>
+ </div>
+ <div class="comments">
+ <p> <i class="fa fa-star-o fa-5x"></i></p>
+ <p class="details">
+   Review, rate and recommend markets for farmers and members to view the feedback.
+ </p>
+ </div>
+ <div class="heart">
+   <p><i class="fa fa-users fa-5x"></i></p>
+   <p class="details">
+   Connect and build relationships with farmers and members of the communities. 
+ </p>
+ </div>
 </div>
