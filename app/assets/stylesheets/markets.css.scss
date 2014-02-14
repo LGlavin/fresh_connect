@@ -234,13 +234,12 @@ top-bar{
   width:33%;
   left:0;
   // background-color:purple;
-  padding:40px;
   padding-left:130px;
+  padding-top:5px;
 }
 .fa-5x{
-  font-size:5em;
-   color: #2c3e50;
-  text-shadow: 0px 1px 2px rgba(255,255,255, 0.3);
+  font-size:6em;
+  color: #2c3e50;
    
 }
 .fa-5x:hover{
@@ -249,15 +248,15 @@ top-bar{
  .details{
   margin-left:-60px;
   font-family:'Roboto Condensed', sans-serif;
-  font-size: 18px;
- color: #2c3e50;
-  text-shadow: 0px 1px 2px rgba(255,255,255, 0.3);
+  font-size: 20px;
+  color: #2c3e50;
+  text-shadow: 2px 4px 4px rgba(255,255,255, 0.3);
   padding-top:10px;
   
  }
 .comments{
   display:inline-block;
-  padding:25px;
+  padding:40px;
   padding-left:130px;
   // background-color:yellow;
   left:0;
@@ -266,7 +265,7 @@ top-bar{
 
 .heart{
   display:inline-block;
-  padding:25px;
+  padding:40px;
   padding-left:130px;
   position:relative;
   width:33%;
