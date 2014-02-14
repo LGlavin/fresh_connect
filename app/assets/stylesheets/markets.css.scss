@@ -3,10 +3,8 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 //= depend_on_asset "cardboard.jpg"
 //= depend_on_asset "local_blue.jpg"
-
 body{
-  margin: 0 auto;
-
+  margin-bottom:0px;
 }
 
 .column{
@@ -42,10 +40,12 @@ body{
 }
 
 #list-markets{
-
- border-width:100px;
+ border-width: 80px;
  border-image: url('cardboard.jpg') 80 80 repeat;
+ -moz-border-image: url('cardboard.jpg') 80 80 repeat;
+ -webkit-border-image: url('cardboard.jpg') 80 80 repeat;
 }
+
 .center{
   background-color:#ecf0f1;
 }
@@ -196,7 +196,7 @@ top-bar{
 #main-img{
   background: image-url('local_blue.jpg');
   // background-size: 100% 100%;
-  height: 600px;
+  height: 500px;
   width:100%;
   border-top: 1px solid #999;
   border-bottom: 1px solid #999;
@@ -220,11 +220,15 @@ top-bar{
 
 }
 
+footer{
+  background-color:#fff;
+  margin-bottom:-70px;
+}
 
-footer > p{
+.footer > p{
   text-align: center;
   padding:5px;
-  margin-bottom:-5px;
+  // margin-bottom: 100px;
   color: transparent;
   font-size:14px;
   font-family: 'Roboto Condensed', sans-serif;
