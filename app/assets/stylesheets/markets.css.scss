@@ -8,8 +8,9 @@ body{
 }
 
 .column{
- padding-top: 65px;
+ padding-top: 105px;
  padding-left:600px;
+ // margin-bottom:-100px;
 }
 .form-find{
   padding-left:120px;
@@ -200,11 +201,14 @@ top-bar{
 #main-img{
   background: image-url('local_blue.jpg')no-repeat;
   // background-size: 100% 100%;
-  height: 500px;
+  height: 700px;
   width:100%;
   border-top: 1px solid #999;
   border-bottom:2px solid #999;
   background-size:cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   }
 
 // p{
@@ -223,58 +227,58 @@ top-bar{
   padding-right:100px;
 
 }
-#icons{
-  width:100%;
-  height:350px;
-  margin-bottom:100px;
-  background-color:#fff;
-}
-.clock{
-  display:inline-block;
-  width:33%;
-  left:0;
-  // background-color:purple;
-  padding-left:130px;
-  padding-top:55px;
-}
-.fa-5x{
-  font-size:6em;
-  color: #2c3e50;
-   
-}
-.fa-5x:hover{
-  color:#999;
-}
- .details{
-  margin-left:-60px;
-  font-family:'Roboto Condensed', sans-serif;
-  font-size: 24px;
-  color: #2c3e50;
-  text-shadow: 2px 4px 4px rgba(255,255,255, 0.3);
-  padding-top:10px;
-  
- }
-.comments{
-  display:inline-block;
-  padding:40px;
-  padding-left:130px;
-  // background-color:yellow;
-  left:0;
-  width: 33%; 
-}
 
-.heart{
-  display:inline-block;
-  padding:40px;
-  padding-left:130px;
-  position:relative;
-  width:33%;
-  // background-color:red;
-}
+// #icons{
+//   margin-bottom:-150px;
+//   background-color:#fff;
+// }
+// .clock{
+//   display:inline-block;
+//   width:33%;
+//   left:0;
+//   // background-color:purple;
+//   padding-left:130px;
+//   padding-top:55px;
+// }
+// .fa-5x{
+//   font-size:6em;
+//   color: #2c3e50;
+   
+// }
+// .fa-5x:hover{
+//   color:#999;
+// }
+//  .details{
+//   margin-left:-60px;
+//   font-family:'Roboto Condensed', sans-serif;
+//   font-size: 24px;
+//   color: #2c3e50;
+//   text-shadow: 2px 4px 4px rgba(255,255,255, 0.3);
+//   padding-top:10px;
+  
+//  }
+// .comments{
+//   display:inline-block;
+//   padding:40px;
+//   padding-left:130px;
+//   // background-color:yellow;
+//   left:0;
+//   width: 33%; 
+// }
+
+// .heart{
+//   display:inline-block;
+//   padding:40px;
+//   padding-left:130px;
+//   position:relative;
+//   width:33%;
+//   // background-color:red;
+// }
 
 .footer{
   background-color:#fff;
-  width:100%;
+  clear:both;
+  padding-top:5px;
   // border-top: 2px solid #999;
   
 }
